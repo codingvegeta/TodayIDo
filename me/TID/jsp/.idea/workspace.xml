@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e0561f32-7ab5-4d05-8b0f-5c2aaf35ba46" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/form.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/invalidCharset.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oneToTen.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oneToTen2.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redirectEncodingTest.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requestInfo.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sum.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/time.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/useDecl.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/useDecl2.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/useImportCalendar.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/viewHeaderList.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/viewParameter.jsp" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="2GxUPqZv7Ml5PCO2UvCIt2XSeMA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/user/IdeaProjects/TodayIDo"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e0561f32-7ab5-4d05-8b0f-5c2aaf35ba46" name="Changes" comment="" />
+      <created>1667329706141</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1667329706141</updated>
+      <workItem from="1667329707277" duration="7000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
