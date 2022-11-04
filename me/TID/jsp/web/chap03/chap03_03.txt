@@ -1,0 +1,43 @@
+page 디렉티브
+
+
+page 디렉티브는 JSP 페이지에 대한 정보를 입력하기 위해 사용한다.
+page 디렉티브를 사용하면 JSP 페이지가 어떤 문서를 생성하고, 어떤 자바 클래스를 사용하고
+세션에 참여하는지 출력버퍼의 존재여부등 JSP페이지를 실행하는데 필요한 정보를 알 수 있다
+
+
+* contentType : JSP 가 생성할 문서의 MIME 타입과 캐릭터 인코딩을 지정한다. / 기본값 text/html
+* import : JSP 페이지에서 사용할 자바 클래스를 지정한다.
+* session : JSP 페이지가 세션을 사용할지 여부를 지정한다. true 사용 false 사용x / 기본값 true
+* buffer : JSP 페이지의 출력 버퍼 크기를 지정한다. / 기본값 최소 8kb이상
+* autoFlush : 출력 버퍼가 다 찼을 경우 자동으로 버퍼에 데이터를 스트림에 보내고 비울지 여부를 지정한다. (true= 웹 브라우저에 보내고 버퍼를 비움) / 기본값 true
+* info : JSP 페이지에 대한 설명을 입력한다.
+* errorPage : JSP 페이지를 실행하는 도중에 에러가 발생할 때 보여줄 페이지를 지정한다.
+* isErrorPage : 현재 페이지가 에러 발생 될 때 보여주는 페이지인지 여부를 지정한다 / 기본값 false
+* pageEncoding : JSP 페이지 소스 코드의 캐릭터 인코딩을 지정한다.
+* isELifnored : "true" 일 경우 표현언어를 해석하지 않고 문자로 처리 / 기본값 false
+* defferedSymtaxAllowedAsLiteral : #{ 문자가 문자열로 사용되는것을 허용할지 여부 / 기본값 false
+* trimDirectiveWhitespaces : 출력 결과에서 템플릿 텍스트의 공백 문자를 제거할지의 여부 / 기본값 false
+
+
+-contentType 속성과 캐릭터 셋
+속성을 설정하지 않을 경우 text/html이 기본값이다.
+캐릭터셋 부분을 생략할 경우 기본 캐릭터 셋인 ISO-8859-1 을 사용하게 된다.
+invalidCharset.jsp을 실행하면 문자가 깨지는데
+소스코드를 저장한 캐릭터인코딩과 page contentType이 일치하지 않기 때문이다.
+
+
+-import 속성
+자바의 완전한 이름 대신 단순이름을 사용하기 위해 import한다.
+useImportCalendar.jsp를 실행해보면 알 수 있다.
+
+
+-trimDirectiveWhitespaces 속성을 이용한 공백처리
+time.jsp 실행시켜보면 page content 줄의 줄바꿈 공백이 제거된다.
+
+
+-JSP 페이지 인코딩과 pageEncoding 속성
+pageEncoding 속성을 지정하지 않은 상태에서 contentType 속성의 charset의 값을 잘못 지정하면 잘못된 인코딩을 이용해서 파일을 읽어오게 되며
+문자가 깨져서 출력되는 원인이 된다.
+pageEncoding 속성을 지정한 인코딩과 contentType 속성이 지정한 인코딩이 서로 다를 수도 있다.
+useUTF-8.jsp를 실행시켜 보자.

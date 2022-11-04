@@ -1,0 +1,44 @@
+jsp:useBean 태그를 이용한 자바 객체 사용
+
+JSP 페이지의 주된 기능은 데이터를 보여주는 기능이다.
+게시판의 글 목록 보기, 글 읽기, 회원정보 보기등의 기능이 해당한다.
+JSP 에서 이런 종류의 데이터들은 자바빈과 같은 클래스에 담아서 값을 보여주는 것이 일반적이다.
+JSP 규약은 JSP 페이지에서 빈번히 사용되는 자바빈 객체를 위한 액션태그를 제공하고 있다.
+이 액션태그들을 사용하면 자바빈 객체를 생성하거나, 빈의 프로퍼티를 출력하거나, 프로퍼티의 값을 변경할 수 있다.
+JSP:useBen , setProperty, getProperty 액션태그를 사용해서 JSP 페이지에서 자바빈 객체를 사용하는 방법에 대해서 알아보자.
+
+-JSP:useBean 액션 태그를 사용해서 객체 생성하기
+JSP 페이지에서 사용할 자바빈 객체를 지정할 때 사용한다.
+<jsp:useBean id="[빈이름]" class="[자바빈클래스이름]" scope="[범위]"/>
+id : JSP 페이지에서 자바빈 객체에 접근할 때 사용할 이름을 지정한다.
+class : 패키지 이름을 포함한 자바빈 클래스의 완전한 이름을 입력한다.
+scope : 자바빈 객체를 저장할 영역을 지정한다. page,request,session,application중 하나를 값으로 갖는다.
+       (디폴트값은 page이다)
+
+<JSP:useBean>의 중요한점은 객체를 생성할 뿐만 아니라 지정한 영역에 저장한다는 점 그리고 이미 영역에 객체가 존재하면
+    그 객체를 사용한다는 점이다.
+
+<JSP:useBean> 액션 태그의 scope 속성값에 따라 객체는 서로 다른 기본 객체에 저장된다. 각 값과 관련된 기본 객체는 참조
+* page : pageContext 기본 객체
+* request : request 기본 객체
+* session : session 기본 객체
+* application : application 기본 객체
+따라서 빈 액션태그를 사용하면 영역별로 공유할 데이터를 쉽게 저장할 수 있게된다.
+
+<jsp:useBean> 액션 태그의 class 속성 대신에 type 속성을 사용할 수도 있다.
+<jsp:useBean id="member" type="chap08.member.MemberInfo" scope="request" />
+type 속성을 사용하면 지정한 영역에 이미 객체가 존재한다고 가정한다.
+"member" 속성에 객체가 존재하지 않으면 객체를 새로 만들지 않고 에러를 발생시킨다.
+
+
+-jsp:setProperty 액션태그와 jsp:getProperty 액션태그
+setProperty 액션 태그를 사용하면 생성한 자바빈 객체의 프로퍼티 값을 변경할 수 있다.
+
+<jsp:setProperty name ="[자바빈]" property="이름" value="[값]" />
+name : 프로퍼티의 값을 변경할 자바빈 객체의 이름을 지정한다. useBean 액션태그의 id 속성에서 지정한 값을 사용한다.
+property : 값을 지정할 프로퍼티의 이름을 지정한다.
+value : 프로퍼티의 값을 지정한다. 표현식 <%=값%> 이나 EL${값} dmf tkdydgkf tn dlTek.
+
+<jsp:getProperty name="자바빈이름" property="프로퍼티이름" />
+name : 자바빈 객체의 이름을 지정한다.
+property : 출력할 프로퍼티의 이름을 지정한다.
