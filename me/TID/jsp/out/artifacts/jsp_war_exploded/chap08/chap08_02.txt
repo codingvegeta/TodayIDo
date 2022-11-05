@@ -42,3 +42,12 @@ value : 프로퍼티의 값을 지정한다. 표현식 <%=값%> 이나 EL${값} 
 <jsp:getProperty name="자바빈이름" property="프로퍼티이름" />
 name : 자바빈 객체의 이름을 지정한다.
 property : 출력할 프로퍼티의 이름을 지정한다.
+
+setProperty 액션태그를 사용함으로써 요청파라미터의 값을 간단하게 자바빈 객체의 프로퍼티에 저장할 수 있다.
+
+-자바빈 프로퍼티 타입에 따른 값 맵핑
+자바빈 프로퍼티의 타입이 int인 경우를 생각해보자.
+setProperty 액션태그의 값을 어떻게 처리할까?
+<jsp:setProperty name ="someBean" property="width" value="100"/>
+위 코드에서 width 프로퍼티의 타입이 int 라면 value에 입력한 값 "100" 을 int 타입으로 변환해서 저장한다.
+setProperty 액션태그는 프로퍼티의 타입에 따라서 알맞게 값을 처리한다. 값이 ""이면 기본값이 된다.
