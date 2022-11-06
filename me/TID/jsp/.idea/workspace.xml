@@ -41,7 +41,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/apache-tomcat-9.0.67/lib/tomcat-api.jar",
+    "last_opened_file_path": "C:/apache-tomcat-9.0.67/webapps/jsp/web/chap10_2",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
@@ -51,6 +51,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\apache-tomcat-9.0.67\webapps\jsp\web\chap10_2" />
+      <recent name="C:\apache-tomcat-9.0.67\webapps\jsp\web\chap10" />
       <recent name="C:\apache-tomcat-9.0.67\webapps\jsp\web\chap07\viewModule" />
       <recent name="C:\apache-tomcat-9.0.67\webapps\jsp\web\chap07" />
       <recent name="C:\apache-tomcat-9.0.67\webapps\jsp\web\chap06\error" />
@@ -162,7 +164,8 @@
       <updated>1667490696533</updated>
       <workItem from="1667490697696" duration="9256000" />
       <workItem from="1667582528639" duration="8272000" />
-      <workItem from="1667661179691" duration="12812000" />
+      <workItem from="1667661179691" duration="12979000" />
+      <workItem from="1667744371018" duration="7045000" />
     </task>
     <servers />
   </component>
