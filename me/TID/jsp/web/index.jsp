@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
   <head>
-    <title>인덱스인부분</title>
+    <title>$Title$</title>
   </head>
   <body>
   $END$

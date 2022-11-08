@@ -4,6 +4,17 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
 
+    <servlet>
+        <servlet-name>DBCPInit</servlet-name>
+        <servlet-class>jdbc.DBCPinit</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet>
+        <servlet-name>mysqlDriverLoader</servlet-name>
+        <servlet-class>jdbc.MySQLDriverLoader</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
 
     <jsp-config>
         <jsp-property-group>

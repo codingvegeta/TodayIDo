@@ -41,12 +41,17 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/apache-tomcat-9.0.67/lib/jstl-1.2.jar",
+    "last_opened_file_path": "C:/apache-tomcat-9.0.67/lib/commons-pool2-2.11.1.jar",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -170,6 +175,9 @@
       <workItem from="1667841262625" duration="114000" />
       <workItem from="1667842745174" duration="5622000" />
       <workItem from="1667922422560" duration="12897000" />
+      <workItem from="1667935978863" duration="25000" />
+      <workItem from="1667966758153" duration="21018000" />
+      <workItem from="1668006599678" duration="13524000" />
     </task>
     <servers />
   </component>

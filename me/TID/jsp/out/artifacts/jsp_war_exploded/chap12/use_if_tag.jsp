@@ -17,7 +17,7 @@
 </c:if>
 
 <c:if test="${param.name == 'bk'}">
-    name 파라미터의 값이 ${para.name} 입니다.<br>
+    name 파라미터의 값이 ${param.name} 입니다.<br>
 </c:if>
 
 <c:if test="${18 < param.age}">
