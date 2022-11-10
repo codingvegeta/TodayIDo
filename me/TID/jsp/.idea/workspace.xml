@@ -15,8 +15,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -41,7 +41,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/apache-tomcat-9.0.67/lib/commons-pool2-2.11.1.jar",
+    "last_opened_file_path": "C:/Users/user/IdeaProjects/TodayIDo",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
@@ -177,7 +177,8 @@
       <workItem from="1667922422560" duration="12897000" />
       <workItem from="1667935978863" duration="25000" />
       <workItem from="1667966758153" duration="21018000" />
-      <workItem from="1668006599678" duration="13524000" />
+      <workItem from="1668006599678" duration="13609000" />
+      <workItem from="1668102181799" duration="4948000" />
     </task>
     <servers />
   </component>
