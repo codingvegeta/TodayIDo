@@ -15,10 +15,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/web/chap16/now.jsp" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -41,12 +44,12 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/user/IdeaProjects/TodayIDo",
+    "last_opened_file_path": "C:/apache-tomcat-9.0.67/webapps/jsp",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -63,11 +66,11 @@
       <recent name="C:\apache-tomcat-9.0.67\webapps\jsp\web\chap06\error" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\apache-tomcat-9.0.67\webapps\jsp\web\WEB-INF" />
       <recent name="C:\apache-tomcat-9.0.67\webapps\jsp\web\chap11" />
       <recent name="C:\apache-tomcat-9.0.67\webapps\jsp\src\chap11" />
       <recent name="C:\apache-tomcat-9.0.67\webapps\jsp" />
       <recent name="C:\apache-tomcat-9.0.67\webapps\jsp\web\WEB-INF\classes" />
-      <recent name="C:\apache-tomcat-9.0.67\webapps\jsp\web\chap07\view" />
     </key>
   </component>
   <component name="RunManager">
@@ -179,6 +182,12 @@
       <workItem from="1667966758153" duration="21018000" />
       <workItem from="1668006599678" duration="13609000" />
       <workItem from="1668102181799" duration="4948000" />
+      <workItem from="1668108432627" duration="165000" />
+      <workItem from="1668108790269" duration="25000" />
+      <workItem from="1668180231733" duration="3284000" />
+      <workItem from="1668194127839" duration="42000" />
+      <workItem from="1668340340407" duration="38000" />
+      <workItem from="1668340404942" duration="2265000" />
     </task>
     <servers />
   </component>

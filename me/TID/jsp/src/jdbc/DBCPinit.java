@@ -28,7 +28,7 @@ public class DBCPinit extends HttpServlet {
     private void intiConnetionPool() {
         try {
             String jdbcUrl =
-                    "jdbc:mysql://localhost:3306/chap14?" +
+                    "jdbc:mysql://localhost:3306/guestbook?" +
                             "useUnicode=true&characterEncoding=utf8";
             String username = "jspexam";
             String pw = "jsppw";
