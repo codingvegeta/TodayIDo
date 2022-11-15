@@ -15,8 +15,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -45,7 +45,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "create.test.in.the.same.root": "true",
-    "last_opened_file_path": "C:/Users/user/IdeaProjects/london",
+    "last_opened_file_path": "C:/apache-tomcat-9.0.67/webapps/jsp",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
@@ -67,11 +67,11 @@
       <recent name="C:\apache-tomcat-9.0.67\webapps\jsp\web\chap07\viewModule" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\apache-tomcat-9.0.67\webapps\jsp\web\chap19" />
       <recent name="C:\apache-tomcat-9.0.67\webapps\jsp\web\WEB-INF" />
       <recent name="C:\apache-tomcat-9.0.67\webapps\jsp\web\chap11" />
       <recent name="C:\apache-tomcat-9.0.67\webapps\jsp\src\chap11" />
       <recent name="C:\apache-tomcat-9.0.67\webapps\jsp" />
-      <recent name="C:\apache-tomcat-9.0.67\webapps\jsp\web\WEB-INF\classes" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="mvc.controller" />
@@ -194,7 +194,8 @@
       <workItem from="1668340340407" duration="38000" />
       <workItem from="1668340404942" duration="13528000" />
       <workItem from="1668393960606" duration="35000" />
-      <workItem from="1668414195002" duration="19250000" />
+      <workItem from="1668414195002" duration="19315000" />
+      <workItem from="1668526925759" duration="5070000" />
     </task>
     <servers />
   </component>

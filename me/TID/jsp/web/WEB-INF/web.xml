@@ -103,6 +103,20 @@
         <filter-class>filter.LoginCheckFilter</filter-class>
     </filter>
 
+    <filter>
+        <filter-name>encodingFilter</filter-name>
+        <filter-class>util.CharacterEncodingFilter</filter-class>
+        <init-param>
+            <param-name>encodnig</param-name>
+            <param-value>utf-8</param-value>
+        </init-param>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>encodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
     <filter-mapping>
         <filter-name>LoginCheck</filter-name>
         <url-pattern>/chap19/board/*</url-pattern>
@@ -120,6 +134,21 @@
             <include-coda>/chap07/common/footer.jspf</include-coda>
         </jsp-property-group>
     </jsp-config>
+
+    <listener>
+        <listener-class>jdbc.DBCPinitListener</listener-class>
+    </listener>
+
+    <context-param>
+        <param-name>poolConfig</param-name>
+        <param-value>
+            jdbcdriver=com.mysql.jdbc.Driver
+            jdbcUrl=jdbc:mysql://localhost:3306/guestbook?characterEncoding=utf8
+            dbUser=jspexam
+            dbPass=jsppw
+            pllName=guestbook
+        </param-value>
+    </context-param>
 
 <!--    <jsp-config>-->
 <!--        <taglib>-->
