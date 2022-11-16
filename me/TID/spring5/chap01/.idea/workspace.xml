@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2d2f4bf7-7ef2-4841-8f9d-0dedaca23a56" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/spring5.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap02/src/main/java/config/AppConfImport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap02/src/main/java/main/MainForImplmport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap03/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap03/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap03/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap03/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap03/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap03/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap03/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap03/readme/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap03/src/main/java/assembler/Assembler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap03/src/main/java/config/AppConf1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap03/src/main/java/config/AppConf2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap03/src/main/java/config/AppConfImport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap03/src/main/java/config/AppCtx.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap03/src/main/java/main/MainForAssembler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap03/src/main/java/main/MainForImplmport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap03/src/main/java/main/MainForSpring.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap03/src/main/java/main/MainForSpring2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap03/src/main/java/spring/ChangePasswordService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap03/src/main/java/spring/DuplicateMemberException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap03/src/main/java/spring/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap03/src/main/java/spring/MemberDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap03/src/main/java/spring/MemberInfoPrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap03/src/main/java/spring/MemberListPrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap03/src/main/java/spring/MemberNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap03/src/main/java/spring/MemberPrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap03/src/main/java/spring/MemberRegisterService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap03/src/main/java/spring/MemberSummaryPrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap03/src/main/java/spring/RegisterRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap03/src/main/java/spring/VersionPrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap03/src/main/java/spring/WrongPasswordException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap03/target/classes/assembler/Assembler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap03/target/classes/config/AppConf1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap03/target/classes/config/AppConf2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap03/target/classes/config/AppConfImport.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap03/target/classes/config/AppCtx.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap03/target/classes/main/MainForAssembler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap03/target/classes/main/MainForImplmport.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap03/target/classes/main/MainForSpring.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap03/target/classes/main/MainForSpring2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap03/target/classes/spring/ChangePasswordService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap03/target/classes/spring/DuplicateMemberException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap03/target/classes/spring/Member.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap03/target/classes/spring/MemberDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap03/target/classes/spring/MemberInfoPrinter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap03/target/classes/spring/MemberListPrinter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap03/target/classes/spring/MemberNotFoundException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap03/target/classes/spring/MemberPrinter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap03/target/classes/spring/MemberRegisterService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap03/target/classes/spring/RegisterRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap03/target/classes/spring/VersionPrinter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap03/target/classes/spring/WrongPasswordException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04/readme/chap02_01.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04/src/main/java/assembler/Assembler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04/src/main/java/config/AppConf1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04/src/main/java/config/AppConf2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04/src/main/java/config/AppConfImport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04/src/main/java/config/AppCtx.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04/src/main/java/main/MainForAssembler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04/src/main/java/main/MainForImplmport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04/src/main/java/main/MainForSpring.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04/src/main/java/main/MainForSpring2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04/src/main/java/spring/ChangePasswordService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04/src/main/java/spring/DuplicateMemberException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04/src/main/java/spring/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04/src/main/java/spring/MemberDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04/src/main/java/spring/MemberInfoPrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04/src/main/java/spring/MemberListPrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04/src/main/java/spring/MemberNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04/src/main/java/spring/MemberPrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04/src/main/java/spring/MemberRegisterService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04/src/main/java/spring/MemberSummaryPrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04/src/main/java/spring/RegisterRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04/src/main/java/spring/VersionPrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04/src/main/java/spring/WrongPasswordException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04/target/classes/assembler/Assembler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04/target/classes/config/AppConf1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04/target/classes/config/AppConf2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04/target/classes/config/AppConfImport.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04/target/classes/config/AppCtx.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04/target/classes/main/MainForAssembler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04/target/classes/main/MainForImplmport.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04/target/classes/main/MainForSpring.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04/target/classes/main/MainForSpring2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04/target/classes/spring/ChangePasswordService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04/target/classes/spring/DuplicateMemberException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04/target/classes/spring/Member.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04/target/classes/spring/MemberDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04/target/classes/spring/MemberInfoPrinter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04/target/classes/spring/MemberListPrinter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04/target/classes/spring/MemberNotFoundException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04/target/classes/spring/MemberPrinter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04/target/classes/spring/MemberRegisterService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04/target/classes/spring/MemberSummaryPrinter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04/target/classes/spring/RegisterRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04/target/classes/spring/VersionPrinter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04/target/classes/spring/WrongPasswordException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap02/readme/chap02_01.md" beforeDir="false" afterPath="$PROJECT_DIR$/../chap02/readme/readme.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2HcUEyrTY5hWB4AEz09EUAdJnMk" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/user/IdeaProjects/TodayIDo/me/TID/spring5/chap04"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2d2f4bf7-7ef2-4841-8f9d-0dedaca23a56" name="Changes" comment="" />
+      <created>1668583758544</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1668583758544</updated>
+      <workItem from="1668583759750" duration="12000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
