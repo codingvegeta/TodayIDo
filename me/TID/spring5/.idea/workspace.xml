@@ -1,61 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5691bfd1-a051-44ea-83ee-dc6a240b919c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/chap06/src/main/java/config/AppCtxWithCache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chap06/src/main/java/main/MainAspectWithCache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chap07/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chap07/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chap07/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chap07/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chap07/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chap07/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chap07/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chap07/readme/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chap07/src/main/java/assembler/Assembler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chap07/src/main/java/config/AppConf1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chap07/src/main/java/config/AppConf2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chap07/src/main/java/config/AppConfImport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chap07/src/main/java/config/AppCtx.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chap07/src/main/java/main/MainForAssembler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chap07/src/main/java/main/MainForImplmport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chap07/src/main/java/main/MainForSpring.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chap07/src/main/java/main/MainForSpring2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chap07/src/main/java/spring/ChangePasswordService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chap07/src/main/java/spring/DuplicateMemberException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chap07/src/main/java/spring/Member.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chap07/src/main/java/spring/MemberDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chap07/src/main/java/spring/MemberInfoPrinter.java" afterDir="false" />
+    <list default="true" id="5691bfd1-a051-44ea-83ee-dc6a240b919c" name="Changes" comment="Today I DO 2022/11/17 Spring5 공부중">
+      <change afterPath="$PROJECT_DIR$/chap07/src/main/java/main/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap07/src/main/java/main/MainForCPS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap07/src/main/java/main/MainForMemberDao.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/chap07/src/main/java/spring/MemberListPrinter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chap07/src/main/java/spring/MemberNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chap07/src/main/java/spring/MemberPrinter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chap07/src/main/java/spring/MemberRegisterService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chap07/src/main/java/spring/MemberSummaryPrinter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chap07/src/main/java/spring/RegisterRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chap07/src/main/java/spring/VersionPrinter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chap07/src/main/java/spring/WrongPasswordException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chap07/target/classes/assembler/Assembler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chap07/target/classes/config/AppConf1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chap07/target/classes/config/AppConf2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chap07/target/classes/config/AppConfImport.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chap07/target/classes/config/AppCtx.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chap07/target/classes/main/MainForAssembler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chap07/target/classes/main/MainForImplmport.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chap07/target/classes/main/MainForSpring.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chap07/target/classes/main/MainForSpring2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chap07/target/classes/spring/ChangePasswordService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chap07/target/classes/spring/DuplicateMemberException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chap07/target/classes/spring/Member.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chap07/target/classes/spring/MemberDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chap07/target/classes/spring/MemberInfoPrinter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chap07/target/classes/spring/MemberListPrinter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chap07/target/classes/spring/MemberNotFoundException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chap07/target/classes/spring/MemberPrinter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chap07/target/classes/spring/MemberRegisterService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chap07/target/classes/spring/MemberSummaryPrinter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chap07/target/classes/spring/RegisterRequest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chap07/target/classes/spring/VersionPrinter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chap07/target/classes/spring/WrongPasswordException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap07/src/main/java/spring/WrongIdPasswordException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap07/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap08/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap08/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap08/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap08/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap08/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap08/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap08/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap08/readme/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap08/src/main/java/chap08/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap08/src/main/java/config/ControllerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap08/src/main/java/config/MvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap08/webapp/WEB-INF/view/hello.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap08/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap09/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap09/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap09/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap09/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap09/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap09/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap09/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap09/readme/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap09/src/main/java/chap08/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap09/src/main/java/config/ControllerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap09/src/main/java/config/MvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap09/target/chap01-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap09/target/chap01-1.0-SNAPSHOT/WEB-INF/classes/chap08/HelloController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap09/target/chap01-1.0-SNAPSHOT/WEB-INF/classes/config/ControllerConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap09/target/chap01-1.0-SNAPSHOT/WEB-INF/classes/config/MvcConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap09/target/chap01-1.0-SNAPSHOT/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap09/target/chap01-1.0-SNAPSHOT/WEB-INF/lib/spring-aop-5.3.23.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap09/target/chap01-1.0-SNAPSHOT/WEB-INF/lib/spring-beans-5.3.23.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap09/target/chap01-1.0-SNAPSHOT/WEB-INF/lib/spring-context-5.3.23.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap09/target/chap01-1.0-SNAPSHOT/WEB-INF/lib/spring-core-5.3.23.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap09/target/chap01-1.0-SNAPSHOT/WEB-INF/lib/spring-expression-5.3.23.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap09/target/chap01-1.0-SNAPSHOT/WEB-INF/lib/spring-jcl-5.3.23.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap09/target/chap01-1.0-SNAPSHOT/WEB-INF/lib/spring-web-5.3.23.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap09/target/chap01-1.0-SNAPSHOT/WEB-INF/lib/spring-webmvc-5.3.23.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap09/target/chap01-1.0-SNAPSHOT/WEB-INF/view/hello.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap09/target/chap01-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap09/target/classes/chap08/HelloController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap09/target/classes/config/ControllerConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap09/target/classes/config/MvcConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap09/webapp/WEB-INF/view/hello.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap09/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap07/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/chap07/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap07/readme/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/chap07/readme/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap07/src/main/java/assembler/Assembler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap07/src/main/java/config/AppCtx.java" beforeDir="false" afterPath="$PROJECT_DIR$/chap07/src/main/java/config/AppCtx.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap07/src/main/java/main/MainForAssembler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap07/src/main/java/main/MainForImplmport.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap07/src/main/java/main/MainForSpring.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap07/src/main/java/main/MainForSpring2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap07/src/main/java/spring/ChangePasswordService.java" beforeDir="false" afterPath="$PROJECT_DIR$/chap07/src/main/java/spring/ChangePasswordService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap07/src/main/java/spring/MemberDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/chap07/src/main/java/spring/MemberDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap07/src/main/java/spring/MemberRegisterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/chap07/src/main/java/spring/MemberRegisterService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap07/target/classes/assembler/Assembler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap07/target/classes/config/AppConf1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap07/target/classes/config/AppConf2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap07/target/classes/config/AppConfImport.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap07/target/classes/config/AppCtx.class" beforeDir="false" afterPath="$PROJECT_DIR$/chap07/target/classes/config/AppCtx.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap07/target/classes/main/MainForAssembler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap07/target/classes/main/MainForImplmport.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap07/target/classes/main/MainForSpring.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap07/target/classes/main/MainForSpring2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap07/target/classes/spring/ChangePasswordService.class" beforeDir="false" afterPath="$PROJECT_DIR$/chap07/target/classes/spring/ChangePasswordService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap07/target/classes/spring/MemberDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/chap07/target/classes/spring/MemberDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap07/target/classes/spring/MemberListPrinter.class" beforeDir="false" afterPath="$PROJECT_DIR$/chap07/target/classes/spring/MemberListPrinter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap07/target/classes/spring/MemberPrinter.class" beforeDir="false" afterPath="$PROJECT_DIR$/chap07/target/classes/spring/MemberPrinter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap07/target/classes/spring/MemberRegisterService.class" beforeDir="false" afterPath="$PROJECT_DIR$/chap07/target/classes/spring/MemberRegisterService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap07/target/classes/spring/MemberSummaryPrinter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap07/target/classes/spring/VersionPrinter.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +103,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/user/IdeaProjects/TodayIDo/me/TID/spring5/chap07",
+    "last_opened_file_path": "C:/Users/user/IdeaProjects/TodayIDo/me/TID/spring5/chap09",
     "nodejs_package_manager_path": "npm"
   }
 }]]></component>
@@ -102,7 +126,18 @@
       <workItem from="1668586346543" duration="28000" />
       <workItem from="1668592115582" duration="32000" />
       <workItem from="1668618846614" duration="69000" />
+      <workItem from="1668627130213" duration="50000" />
+      <workItem from="1668697646048" duration="82000" />
+      <workItem from="1668700837244" duration="12000" />
     </task>
+    <task id="LOCAL-00001" summary="Today I DO 2022/11/17 Spring5 공부중">
+      <created>1668627161661</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1668627161661</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,5 +153,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Today I DO 2022/11/17 Spring5 공부중" />
+    <option name="LAST_COMMIT_MESSAGE" value="Today I DO 2022/11/17 Spring5 공부중" />
   </component>
 </project>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="chap08:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2d2f4bf7-7ef2-4841-8f9d-0dedaca23a56" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../chap07/src/main/java/main/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap07/src/main/java/main/MainForCPS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap07/src/main/java/main/MainForMemberDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap07/src/main/java/spring/MemberListPrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap07/src/main/java/spring/WrongIdPasswordException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap07/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readme/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chap08/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/config/ControllerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/config/MvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/WEB-INF/view/hello.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap07/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../chap07/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap07/readme/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/../chap07/readme/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap07/src/main/java/assembler/Assembler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap07/src/main/java/config/AppCtx.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chap07/src/main/java/config/AppCtx.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap07/src/main/java/main/MainForAssembler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap07/src/main/java/main/MainForImplmport.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap07/src/main/java/main/MainForSpring.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap07/src/main/java/main/MainForSpring2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap07/src/main/java/spring/ChangePasswordService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chap07/src/main/java/spring/ChangePasswordService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap07/src/main/java/spring/MemberDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chap07/src/main/java/spring/MemberDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap07/src/main/java/spring/MemberRegisterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chap07/src/main/java/spring/MemberRegisterService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap07/target/classes/assembler/Assembler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap07/target/classes/config/AppConf1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap07/target/classes/config/AppConf2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap07/target/classes/config/AppConfImport.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap07/target/classes/config/AppCtx.class" beforeDir="false" afterPath="$PROJECT_DIR$/../chap07/target/classes/config/AppCtx.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap07/target/classes/main/MainForAssembler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap07/target/classes/main/MainForImplmport.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap07/target/classes/main/MainForSpring.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap07/target/classes/main/MainForSpring2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap07/target/classes/spring/ChangePasswordService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../chap07/target/classes/spring/ChangePasswordService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap07/target/classes/spring/MemberDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../chap07/target/classes/spring/MemberDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap07/target/classes/spring/MemberListPrinter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../chap07/target/classes/spring/MemberListPrinter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap07/target/classes/spring/MemberPrinter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../chap07/target/classes/spring/MemberPrinter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap07/target/classes/spring/MemberRegisterService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../chap07/target/classes/spring/MemberRegisterService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap07/target/classes/spring/MemberSummaryPrinter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap07/target/classes/spring/VersionPrinter.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Jsp File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2HcUEyrTY5hWB4AEz09EUAdJnMk" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/user/IdeaProjects/TodayIDo/me/TID/spring5",
+    "project.structure.last.edited": "Facets",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Tomcat 9.0.65" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.65" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="chap08:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="29fc6760-fd46-4c70-9ec4-fc9b565b32d1" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="64809" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="chap08:war exploded" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2d2f4bf7-7ef2-4841-8f9d-0dedaca23a56" name="Changes" comment="" />
+      <created>1668583758544</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1668583758544</updated>
+      <workItem from="1668583759750" duration="12000" />
+      <workItem from="1668697729740" duration="3103000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

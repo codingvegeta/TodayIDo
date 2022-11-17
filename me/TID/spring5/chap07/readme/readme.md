@@ -24,3 +24,39 @@
 ---
 * 스프링을 사용하면 DataSource나 Connection, Statement, ResultSet을 직접 사용하지 않고
 JdbcTemplate을 이용해서 편리하게 쿼리를 실행할 수 있다.
+* JdbcTemplate 클래스는 SELECT 쿼리 실행을 위한 query() 메서드를 제공한다.
+  * List<T> query(String sql, RowMapper<T> rowMapper)
+  * query() 메서드는 sql 파라미터로 전달받은 쿼리를 실행하고 RowMapper를 이용해서
+  ResultSet의 결과를 자바 객체로 변환한다.
+* 결과가 1행인 경우 queryForObject() 메서드를 사용할 수 있다.
+  * T queryForObject(String sql, Class<T> requiredType)
+  * 쿼리 실행 결과는 반드시 한 행이여야 한다.
+  * 결과행이 없거나 두개 이상이면 Exception이 발생
+* INSERT, UPDATE, DELETE 쿼리는 update() 메서드를 사용한다.
+  * update() 메서드는 실행 결과로 변경된 행의 개수를 리턴한다.
+
+## 3 트랜잭션 처리
+
+---
+* 스프링이 제공하는 @Transactional 애노테이션을 사용하면 트랜잭션 범위를 매우 쉽게
+지정할 수 있다.
+* 트랜잭션 범위에서 실행하고 싶은 메서드에 @Transactional 애노테이션만 붙이면 된다.
+* @Transactional 애노테이션이 제대로 동작하려면 두가지 내용을 스프링에 추가해야 한다.
+  * 플랫폼 트랜잭션 매니저 빈 설정
+  * @Transactional 애노테이션 활성화 설정
+* @EnableTransactionManagement 애노테이션은 @Transactional 애노테이션이 붙은
+메서드를 트랜적션 범위에서 실행하는 기능을 활성화한다.
+
+### 3.1 @Transactional과 프록시
+
+---
+* 여러 빈 객체에 공통으로 적용되는 기능을 구현하는 방법으로 AOP가 있는데 트랜잭션도 공통
+기능중에 하나이다.
+* @Transactional 애노테이션을 이용해서 트랜잭션을 처리하기 위해 내부적으로 AOP를 사용한다.
+* getBean()으로 가져오는 객체는 트랜잭션 처리를 위해 생성한 프록시 객체를 리턴한다.
+
+### 3.2 @Transactional 적용 메서드의 롤백 처리
+
+---
+* 커밋을 수행하는 주체가 프록시 객체였던 것처럼 롤백을 처리하는 주체 또한 프록시 객체이다.
+* 
