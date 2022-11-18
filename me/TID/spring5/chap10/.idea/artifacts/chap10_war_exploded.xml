@@ -25,9 +25,10 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-web:5.0.2.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:5.0.2.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-tx:5.0.2.RELEASE" />
-          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-jdbc:8.5.27" />
-          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-juli:8.5.27" />
-          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.45" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-jdbc:9.0.68" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-juli:9.0.68" />
+          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:8.0.30" />
+          <element id="library" level="project" name="Maven: com.google.protobuf:protobuf-java:3.19.4" />
           <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.25" />
           <element id="library" level="project" name="Maven: ch.qos.logback:logback-classic:1.2.3" />
           <element id="library" level="project" name="Maven: ch.qos.logback:logback-core:1.2.3" />
