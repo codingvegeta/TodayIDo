@@ -7,34 +7,40 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<%@taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<!DOCTYPE html>
 <html>
 <head>
-  <title>회원가입</title>
+  <title><spring:message code="member.register"/> </title>
 </head>
 <body>
-<h2>회원 정보 입력</h2>
+<h2><spring:message code="member.ifo"/></h2>
 <form:form action="step3" modelAttribute="registerRequest">
   <p>
-    <label>이메일:<br>
+    <label><spring:message code="email"/> <br>
       <form:input path="email"/>
+      <form:errors path="email"/>
     </label>
   </p>
   <p>
-    <label>이름:<br>
+    <label><spring:message code="name"/> <br>
       <form:input path="name"/>
+      <form:errors path="name"/>
     </label>
   </p>
   <p>
-    <label>비밀번호:<br>
+    <label><spring:message code="password"/> <br>
       <form:password path="password"/>
+      <form:errors path="password"/>
     </label>
   </p>
   <p>
-    <label>비밀번호 확인:<br>
+    <label><spring:message code="password.confirm"/> <br>
       <form:password path="confirmPassword"/>
+      <form:errors path="confirmPassword"/>
     </label>
   </p>
-  <input type="submit" value="가입완료">
+  <input type="submit" value="<spring:message code="register.btn"/> ">
 </form:form>
 
 </body>

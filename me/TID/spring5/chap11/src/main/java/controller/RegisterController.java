@@ -2,13 +2,14 @@ package controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.validation.Errors;
+import org.springframework.web.bind.annotation.*;
 import spring.DuplicateMemberException;
 import spring.MemberRegisterService;
 import spring.RegisterRequest;
+
+import javax.validation.Valid;
+
 
 @Controller
 public class RegisterController {
@@ -45,12 +46,21 @@ public class RegisterController {
     }
 
     @PostMapping("/register/step3")
-    public String handlerStep3(RegisterRequest request) {
+    public String handlerStep3(@Valid RegisterRequest request, Errors errors) {
+        if (errors.hasErrors()) {
+            return "register/step2";
+        }
         try {
             memberRegisterService.regist(request);
             return "register/step3";
         } catch (DuplicateMemberException ex) {
+            errors.rejectValue("email","duplicate");
             return "register/step2";
         }
     }
+
+//    @InitBinder
+//    protected void initBinder(WebDataBinder binder) {
+//        binder.setValidator(new RegisterRequestValidator());
+//    }
 }
