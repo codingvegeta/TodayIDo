@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fb025e4e-8e7d-4fa7-aa11-8f25d3d74579" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/codingtest/baekjoon/level1/Main2438.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/TID.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TID.iml" afterDir="false" />
+    <list default="true" id="fb025e4e-8e7d-4fa7-aa11-8f25d3d74579" name="Changes" comment="Today I DO 2022/11/21 Spring5 공부중">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring5/chap10/readme/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/spring5/chap10/readme/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring5/chap12/src/main/webapp/WEB-INF/view/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/spring5/chap12/src/main/webapp/WEB-INF/view/main.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +34,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/user/IdeaProjects/TodayIDo/me/TID/spring5/chap10",
+    "last_opened_file_path": "C:/Users/user/IdeaProjects/TodayIDo/me/TID/spring5/chap13",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
@@ -74,7 +72,17 @@
       <workItem from="1668775738549" duration="492000" />
       <workItem from="1668776322648" duration="8000" />
       <workItem from="1668790918218" duration="19000" />
+      <workItem from="1668970689700" duration="480000" />
+      <workItem from="1669043895384" duration="202000" />
     </task>
+    <task id="LOCAL-00001" summary="Today I DO 2022/11/21 Spring5 공부중">
+      <created>1668970733799</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1668970733799</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -90,5 +98,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Today I DO 2022/11/21 Spring5 공부중" />
+    <option name="LAST_COMMIT_MESSAGE" value="Today I DO 2022/11/21 Spring5 공부중" />
   </component>
 </project>

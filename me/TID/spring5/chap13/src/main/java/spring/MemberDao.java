@@ -14,24 +14,25 @@ import java.util.List;
 public class MemberDao {
 
     private JdbcTemplate jdbcTemplate;
+    private RowMapper<Member> memberRowMapper = new RowMapper<Member>() {
+        @Override
+        public Member mapRow(ResultSet resultSet, int i) throws SQLException {
+            Member member = new Member(
+                    resultSet.getString("EMAIL"),
+                    resultSet.getString("PASSWORD"),
+                    resultSet.getString("NAME"),
+                    resultSet.getTimestamp("REGTIME").toLocalDateTime());
+            member.setId(resultSet.getLong("ID"));
+            return member;
+        }
+    };
 
     public MemberDao(DataSource datasource) {
         this.jdbcTemplate = new JdbcTemplate(datasource);
     }
 
     public Member selectByEmail(String email) {
-        List<Member> results = jdbcTemplate.query("select * from MEMBER where EMAIL = ?", new RowMapper<Member>() {
-            @Override
-            public Member mapRow(ResultSet resultSet, int i) throws SQLException {
-                Member member = new Member(
-                        resultSet.getString("EMAIL"),
-                        resultSet.getString("PASSWORD"),
-                        resultSet.getString("NAME"),
-                        resultSet.getTimestamp("REGDATE").toLocalDateTime());
-                member.setId(resultSet.getLong("ID"));
-                return member;
-            }
-        }, email);
+        List<Member> results = jdbcTemplate.query("select * from MEMBER where EMAIL = ?",memberRowMapper, email);
 
         return results.isEmpty() ? null : results.get(0);
     }
@@ -62,18 +63,7 @@ public class MemberDao {
     }
 
     public List<Member> selectAll() {
-        List<Member> result = jdbcTemplate.query("select * from MEMBER", new RowMapper<Member>() {
-            @Override
-            public Member mapRow(ResultSet resultSet, int i) throws SQLException {
-                Member member = new Member(
-                        resultSet.getString("EMAIL"),
-                        resultSet.getString("PASSWORD"),
-                        resultSet.getString("NAME"),
-                        resultSet.getTimestamp("REGDATE").toLocalDateTime());
-                member.setId(resultSet.getLong("ID"));
-                return member;
-            }
-        });
+        List<Member> result = jdbcTemplate.query("select * from MEMBER", memberRowMapper );
         return result;
     }
 
@@ -85,20 +75,14 @@ public class MemberDao {
     public List<Member> selectByRegdate(
             LocalDateTime from,LocalDateTime to) {
         List<Member> result = jdbcTemplate.query(
-                "select * from MEMBER where REGDATE between ? and ? odrder by REGDATE desc",
-                new RowMapper<Member>() {
-                    @Override
-                    public Member mapRow(ResultSet resultSet, int i) throws SQLException {
-                        Member member = new Member(
-                                resultSet.getString("EMAIL"),
-                                resultSet.getString("PASSWORD"),
-                                resultSet.getString("NAME"),
-                                resultSet.getTimestamp("REGDATE").toLocalDateTime());
-                        member.setId(resultSet.getLong("ID"));
-                        return member;
-                    }
-                }, from, to);
+                "select * from MEMBER where REGDATE between ? and ? order by REGDATE desc",
+                memberRowMapper, from, to);
         return result;
+    }
+
+    public Member selectById(Long memId) {
+        List<Member> result = jdbcTemplate.query("select * from MEMBER where ID = ?", memberRowMapper, memId);
+        return result.isEmpty() ? null : result.get(0);
     }
 
 

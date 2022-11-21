@@ -40,4 +40,18 @@ HandlerInterCeptor이다.
 ---
 * @CookieValue 애노테이션의 value 속성은 쿠키의 이름을 지정한다.
 * 지정한 이름을 가진 쿠키가 존재하지 않을 수도 있다면 required 속성값을 false로 지정하자
-* 
+
+## 변환 처리에 대한 이해
+
+---
+* 스프링 MVC는 요청 매핑 애노테이션 적용 메서드와 DispatcherServlet 사이를 연결하기 위해
+RequestMappingHandlerAdapter 객체를 사용한다.
+* 이 핸들러 어댑터 객체는 요청 파라미터와 커맨드 객체 사이의 변환 처리를 위해 WebDataBinder를 이용한다.
+* WebDataBinder는 커맨드 객체를 생성하고 커맨드 객체의 프로퍼티와 같은 이름을 갖는 요청 파라미터를
+이용해서 프로퍼티 값을 생성한다.
+
+## @PathVariable을 이용한 경로 변수 처리
+
+---
+* @PathVariable 애노테이션을 사용하면 가변경로를 처리할 수 있다.
+* 매번 다른 웹 사이트 주소를 사용할 수 있다.

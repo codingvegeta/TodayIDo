@@ -1,72 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="chap13:war exploded" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a652b32a-b586-4325-a960-e55cdbb07527" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../chap12/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap12/src/main/java/controller/ChangePwdCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap12/src/main/java/controller/ChangePwdCommandValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap12/src/main/java/controller/ChangePwdController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap12/src/main/java/controller/LogoutController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap12/src/main/java/interceptor/AuthCheckInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap12/src/main/webapp/WEB-INF/view/edit/changePwd.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap12/src/main/webapp/WEB-INF/view/edit/changePwdForm.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap12/src/main/webapp/WEB-INF/view/main.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readme/errorcatch.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readme/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/config/ControllerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/config/MemberConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/config/MvcConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/ChangePwdCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/ChangePwdCommandValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/ChangePwdController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/ListCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/LoginCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/LoginControllerValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/LogoutController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/MemberListController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/RegisterController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/RegisterRequestValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/interceptor/AuthCheckInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring/AuthInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring/AuthService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring/ChangePasswordService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring/DuplicateMemberException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring/Member.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring/MemberDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring/MemberNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring/MemberRegisterService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring/RegisterRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring/WrongIdPasswordException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring/WrongPasswordException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/message/label.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/member/memberList.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/formDateTime.tag" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/edit/changePwd.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/edit/changePwdForm.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/login/loginForm.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/login/loginSuccess.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/main.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/register/step1.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/register/step2.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/register/step3.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/survey/submitted.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/survey/surveyForm.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chap12/readme/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/../chap12/readme/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chap12/src/main/java/config/ControllerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chap12/src/main/java/config/ControllerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chap12/src/main/java/config/MvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chap12/src/main/java/config/MvcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chap12/src/main/java/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chap12/src/main/java/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chap12/src/main/java/controller/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chap12/src/main/java/controller/RegisterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chap12/src/main/java/spring/RegisterRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chap12/src/main/java/spring/RegisterRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chap12/src/main/resources/message/label.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../chap12/src/main/resources/message/label.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chap12/src/main/webapp/WEB-INF/view/login/loginForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../chap12/src/main/webapp/WEB-INF/view/login/loginForm.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chap12/src/main/webapp/WEB-INF/view/register/step2.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../chap12/src/main/webapp/WEB-INF/view/register/step2.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chap12/src/main/webapp/WEB-INF/view/register/step3.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../chap12/src/main/webapp/WEB-INF/view/register/step3.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readme/readme2.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/MemberDetailController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/member/inavlidId.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/member/memberDetail.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/member/noMember.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap12/src/main/webapp/WEB-INF/view/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../chap12/src/main/webapp/WEB-INF/view/main.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/config/ControllerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/ControllerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/config/MvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/MvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/MemberListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/MemberListController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spring/MemberDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/MemberDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/message/label.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/message/label.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/member/memberList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/member/memberList.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +44,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
   </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -93,22 +60,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/user/IdeaProjects/java-bridge",
-    "spring.configuration.checksum": "31df91367ded05503bd3daec4a7ea938"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/IdeaProjects/TodayIDo/me/TID/spring5/chap13&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;31df91367ded05503bd3daec4a7ea938&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\user\IdeaProjects\TodayIDo\me\TID\spring5\chap13" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\IdeaProjects\TodayIDo\me\TID\spring5\chap13\src\main\webapp\WEB-INF\view" />
+    </key>
   </component>
   <component name="RunManager">
-    <configuration name="Tomcat 9.0.68" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.68" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+    <configuration name="Tomcat 9.0.68" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.67" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="chap13:war exploded">
@@ -206,6 +183,8 @@
       <updated>1669019304141</updated>
       <workItem from="1669019305648" duration="1319000" />
       <workItem from="1669020662050" duration="2686000" />
+      <workItem from="1669044100162" duration="6516000" />
+      <workItem from="1669053957792" duration="62000" />
     </task>
     <servers />
   </component>
