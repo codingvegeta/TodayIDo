@@ -70,4 +70,28 @@ application/json인 것을 알 수 있다.
 전송할 수 있다.
 * JSON 형식으로 전송된 요청 데이터를 커맨드 객체로 전달받는 방법은 커맨드 객체에 @RequestBody 애노테이션
 을 붙이기만 하면 된다.
-* 
+
+## ResponseEntity로 객체 리턴하고 응답 코드 지정하기
+
+---
+
+### ResponseEntity를 이용한 응답 데이터 처리
+
+---
+* 요청이 정상인 경우와 비정상인 경우 모두 JSON으로 응답을 전송하는 방법은 ResponseEntity를 사용하는 것이다.
+* 스프링 MVC는 리턴 타입이 ResponseEntity이면 ResponseEntity의 body로 지정한 객체를 사용해서
+변환을 처리한다.
+* ResponseEntity를 생성하는 기본 방법은 status와 body를 이용해서 상태 코드와 JSON으로 변환할 객체를
+지정하는 것이다.(ResponseEntity.status(HttpStatus.상태).body(객체))
+* 몸체 내용이 없는 경우 body를 지정하지 않고 build()로 바로 생성한다.
+* status() 메서드 대신에 다음과 같이 관련 메서드를 사용해도 된다.
+  * noContent() : 204
+  * badRequest() : 400
+  * notFound() : 404
+
+### @ExceptionHandler 적용 메서드에서 ResponseEntity로 응답하기
+
+---
+<img src="image/ErrorHandler.PNG">
+
+* 특정 오류를 핸들링해준다.
