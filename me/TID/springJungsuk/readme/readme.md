@@ -251,4 +251,61 @@
 ## 예외 처리
 
 ---
-###
+### @ExceptionHandler와 @ControllerAdvice
+
+---
+* @ExceptionHandler 예외 처리를 위한 메서드를 작성하고 @ExceptionHandler를 붙인다.
+* 여러 종류의 예외를 처리하는 메서드면 배열 타입으로 설정할 수 있다.
+* @ControllerAdvice 전역 예외 처리 클래스 작성 가능(패키지 지정 가능)
+* 예외처리 메서드가 중복인 경우, 컨트롤러 내의 예외 처리 메서드가 우선
+
+### @ResponseStatus
+
+---
+* 응답 메세지의 상태 코드를 변경할 때 사용
+* 예외 처리 메서드 앞에 붙임 @ExceptionHandler 로 에러코드를 뷰로 보내면 요청이 200번으로 나온다
+  (예외처리(요청처리)가 잘 되었다는 뜻) 이 때 에러코드 변경 가능
+* 사용자 정의 예외 클래스 앞에 작성한다. 
+* 브라우저가 -> DispatcherServlet -> Controller
+  * handlerExceptionResolvers
+    1. ExceptionHandlerExceptionResolver
+    2. ResponseStatusExceptionResolver
+    3. DefaultHandlerExceptionResolver
+  * 컨트롤러 메서드 내에서 try-catch로 처리
+  * 컨트롤러에 @ExceptionHandler 메서드가 처리
+  * @ControllerAdvice 클래스의 @ExceptionHandler 메서드가 처리
+  * 예외 종류별로 뷰 지정 - SimpleMappingExceptionResolver
+  * 응답 상태 코드별로 뷰 지정 -  <error-page>
+
+## 데이터의 변환과 검증
+
+----
+### WebDataBinder
+
+---
+* 타입 변환
+  * 커스텀 PropertyEditor
+  * ConversionService
+  * DefaultPropertyEditor
+* 데이터 검증
+### PropertyEditor
+
+---
+* 양방향 타입 변화 (String -> 타입, 타입 -> String) 특정 타입이나 이름의 필드에 적용 가능
+* 디폴트 PropertyEditor - 스프링이 기본적으로 제공
+* 커스텀 PropertyEditor - 사용자가 직접 구현. PropertyEditorSupport를 상속하면 편리
+* 모든 컨트롤러 내에서의 변환 - WebBindingInitializer를 구현 후 등록
+* 특정 컨트롤러 내에서의 변환 - 컨트롤러에 @InitBinder가 붙은 메서드를 작성
+* Converter - 단방향 타입 변환 (타입 A -> 타입 B) PropertyEditorㅡ이 단점을 개선 (stateful -> stateless)
+* Formatter - 양뱡향 타입 변환(String -> 타입, 타입 -> String) 바인딩할 필드에 적용 - @
+NumberFormat, @DateTimeFormat
+
+### Validator?
+
+---
+* 객체를 검증하기 위한 인터페이스. 객체 검증기(validator)구현에 사용
+* 수동 검증과 자동 검증이 있다.
+  * 수동검증 valdiator를 직접 생성하고 validate()를 직접 호출
+  * 수동 검증에는 supports 와 validate 두가지 메서드가 있다.
+  * supports 가 검증이 가능한 객체인지 판별 한 후 validate에서 검증한다.
+
