@@ -105,7 +105,7 @@ public class BoardDaoImpl implements BoardDao {
 //        return session.selectOne(namespace + "increaseViewCnt" + bno);
 //    }
     @Override
-    public int increaseViewCno(Integer bno) throws Exception {
+    public int increaseViewCnt(Integer bno) throws Exception {
         return session.update(namespace + "increaseViewCnt", bno);
     }
 //    @Override
