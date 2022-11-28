@@ -7,10 +7,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 
 import javax.sql.DataSource;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.Date;
 
 @Repository
@@ -61,6 +58,7 @@ public class UserDaoImpl implements UserDao {
 
         return user;
     }
+
 
     // 사용자 정보를 user_info테이블에 저장하는 메서드
     @Override
