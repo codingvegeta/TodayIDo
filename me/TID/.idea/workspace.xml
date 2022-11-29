@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fb025e4e-8e7d-4fa7-aa11-8f25d3d74579" name="Changes" comment="Today I DO 2022/11/23 &quot;백준 문제 풀기&quot;">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springJungsuk/readme/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/springJungsuk/readme/readme.md" afterDir="false" />
-    </list>
+    <list default="true" id="fb025e4e-8e7d-4fa7-aa11-8f25d3d74579" name="Changes" comment="Today I DO 2022/11/30 &quot;Spring의 정석 공부중&quot;" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,7 +31,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/user/IdeaProjects/TodayIDo/me/TID/springJungsuk/ch2_final",
+    "last_opened_file_path": "C:/Users/user/IdeaProjects/TodayIDo/me/TID/codingtest",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
@@ -78,6 +75,7 @@
       <workItem from="1669144130227" duration="22000" />
       <workItem from="1669217710708" duration="5199000" />
       <workItem from="1669264605129" duration="2479000" />
+      <workItem from="1669746524979" duration="169000" />
     </task>
     <task id="LOCAL-00001" summary="Today I DO 2022/11/21 Spring5 공부중">
       <created>1668970733799</created>
@@ -100,7 +98,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669144145011</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Today I DO 2022/11/30 &quot;Spring의 정석 공부중&quot;">
+      <created>1669746671409</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1669746671409</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,6 +126,7 @@
     <MESSAGE value="Today I DO 2022/11/21 Spring5 공부중" />
     <MESSAGE value="Today I DO 2022/11/23 &quot;Spring의 정석 공부중&quot;" />
     <MESSAGE value="Today I DO 2022/11/23 &quot;백준 문제 풀기&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Today I DO 2022/11/23 &quot;백준 문제 풀기&quot;" />
+    <MESSAGE value="Today I DO 2022/11/30 &quot;Spring의 정석 공부중&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Today I DO 2022/11/30 &quot;Spring의 정석 공부중&quot;" />
   </component>
 </project>
