@@ -7,6 +7,7 @@ import org.junit.runner.*;
 import org.springframework.beans.factory.annotation.*;
 import org.springframework.test.context.*;
 import org.springframework.test.context.junit4.*;
+import org.springframework.test.context.web.WebAppConfiguration;
 
 import java.util.*;
 

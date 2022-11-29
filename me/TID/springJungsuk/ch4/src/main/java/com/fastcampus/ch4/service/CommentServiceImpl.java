@@ -15,7 +15,7 @@ public class CommentServiceImpl implements CommentService {
 //    @Autowired
     CommentDao commentDao;
 
-//    @Autowired
+    @Autowired
     public CommentServiceImpl(CommentDao commentDao, BoardDao boardDao) {
         this.commentDao = commentDao;
         this.boardDao = boardDao;
@@ -27,7 +27,6 @@ public class CommentServiceImpl implements CommentService {
     }
 
     @Override
-
     @Transactional(rollbackFor = Exception.class)
     public int remove(Integer cno, Integer bno, String commenter) throws Exception {
         int rowCnt = boardDao.updateCommentCnt(bno, -1);
