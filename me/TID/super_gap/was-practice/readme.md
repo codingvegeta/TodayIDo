@@ -38,4 +38,12 @@
 * WAS의 주요 튜닝 포인트는 max thread 수
 * 대표적인 WAS로는 톰캣이 있다.
 
+## Servlet 인터페이스
+* 서블릿 컨테이너가 서블릿 인터페이스에 있는 메소드들을 호출함
+* 서블릿 생명주기와 관련된 메서드
+  * init(), service(), destroy()
+* 서블릿 기타 메서드
+  * getServletConfig()
+  * getServletInfo()
+
 	
