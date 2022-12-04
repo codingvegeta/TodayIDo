@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.example.GradeCalculatorTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-12-03T07:30:30" hostname="DESKTOP-C31AVHT" time="0.089">
+  <properties/>
+  <testcase name="평균 학점을 계산한다." classname="org.example.GradeCalculatorTest" time="0.089"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
