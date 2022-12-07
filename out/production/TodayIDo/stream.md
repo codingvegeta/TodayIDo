@@ -73,8 +73,8 @@
     * 람다식을 매개변수로 받아서, 이 람다식에 의해 계산괴는 값들을 요소로 하는
       무한 스트림을 생성한다.
     * ~~~
-  static <T> Stream<T> iterate(T seed, UnaryOperator<T> f)
-  static <T> Stream<T> generate(Supplier<T> s)
+    static <T> Stream<T> iterate(T seed, UnaryOperator<T> f)
+    static <T> Stream<T> generate(Supplier<T> s)
     * iterate()는 씨앗값으로 지정된 값부터 시작해서 람다식에 의해 계산된 결과를
       다시 seed값으로 해서 계산을 반복한다.
     * generate()는 이전 결과를 이용해서 다음 요소를 계산하지 않는다.
@@ -89,7 +89,6 @@
 ## 스트림의 중간연산
 
 ---
-
 * 스트림 자르기 - skip(),limit()
     * 스트림의 일부를 잘라낼 때 사용한다.
     * skip(n) - n개의 요소를 건너 뛴다.
@@ -113,77 +112,10 @@
     * 연산과 연산 사이에 올바르게 처리되었는지 확인할 수 있다.
     * 스트림의 요소를 소모히자 않으므로 연산 사이에 여러번 끼워도 문제가 되지 않는다.
 * mapToInt(), mapToLong(), mapToDouble
-    * Stream<T> 타입의 스트림을 기본형으로 변환하는 것이다.
-    * Stream<Integer> 보다 기본형 스트림이 형변환이 없으므로 더 효율적이다.
-    * 기본형 스트림이 지원하는 편리한 메서드들도 있다.
+  * Stream<T> 타입의 스트림을 기본형으로 변환하는 것이다.
+  * Stream<Integer> 보다 기본형 스트림이 형변환이 없으므로 더 효율적이다.
+  * 기본형 스트림이 지원하는 편리한 메서드들도 있다.
 * flatMap() - Stream<T[]>를 Stream<T>로 변환
-    * 스트림의 요소가 배열이거나 map()의 연산 결과가 배열인 경우
-      Stream<T>로 다루고 싶을 때 map() 대신 flatMap()을 사용하면 된다.
-
-## Optional<T>와 OptionalInt
-
-* 최종 연산의 결과를 Optional객체에 담아서 반환하는 것이다.
-* 객체에 담아서 반환을 하면, 반환된 결과가 null인지 매번 체크 하는 대신
-  Optional에 정의된 메서드를 통해서 간단하게 처리할 수 있다.
-* Optional객체 생성하기
-    * 참조 변수의 값이 null일 가능성이 없을경우 of() 있을경우 ofNullable()
-      을 사용해야 한다.
-    * NullPointException이 발생 할 수 있다.
-    * 기본값으로 초기화 할 때는 empty()을 사용해야 한다.
-    * null로 초기화가 가능하지만 empty()로 초기화 하는것이 좋다.
-* Optional객체의 값 가져오기
-    * get()으로 값을 가져올 수 있으며 값이 null일 때는 NoSuchElement
-      Exception이 발생할 수 있으므로 orElse()로 대체하여 값을 지정할 수 있다.
-    * Optional객체도 filter(), map(), flatMap(),을 사용할 수 있다.
-
-## 스트림의 최종 연산
-
-* 최종 연산은 스트림의 요소를 소모해서 결과를 만들어 낸다.
-* 최종 연산 후에는 스트림이 닫히게 되고 더 이상 사용할 수 없다.
-* forEach()
-    * 반환 타입이 void이므로 스트림의 요소를 출력하는 용도로 많이 사용된다.
-* 조건 검사 - allMatch(), anyMatch(), noneMatch(), findFirst(), findAny()
-    * 스트림의 요소에 대해 지정된 조건에 모든 요소가 일치하는지, 일부가 일치하는지
-      아니면 어던 요소도 일치하지 않는지 확인하는데 사용할 수 있는 메서드들이다.
-    * 이 메서드 들은 모두 매개변수로 Predicate를 요구하며, 연산 결과로 boolean을 반환한다.
-    * findAny(), findFirst()의 반환타입은 Optional<T>이며, 스트림의 요소가
-      없을 경우 비어있는 Optional객체를 반환한다.
-* 통계 - count(), sum(), average(), max(), min()
-    * 기본형 스트림의 요소들에 대한 통계 정보를 얻을 수 있는 메서드 들이다.
-* 리듀싱 - reduce()
-    * 스트림의 요소를 줄여 나가면서 연산을 수행하고 최종 결과를 반환한다.
-    * 처음 두 요소를 가지고 연산을 한 결과를 가지고 다음 요소와 연산한다.
-    * 모든 스트림의 요소를 소모하게 되면 결과를 반환한다.
-
-## collect()
-
-* 스트림의 요소를 수집하는 최종연산이다.
-* 스트림의 요소를 수집하는 방법을 정의한것은 collector이다.
-    * collect() 스트림의 최종연산, 매개변수로 컬렉터를 필요로 한다.
-    * Collector 인터페이스, 컬렉터는 이 인터페이스를 구현해야 한다.
-    * Collectors 클래스, static메서드로 미리 작성된 컬렉터를 제공한다.
-    * Collector인터페이스를 구현하지 않고 간단히 람다식으로 수집할 때 편하다.
-* 스트림을 컬렉션과 배열로 변환 - toList(), toSet(), toMap(), toCollection(),
-  toArray()
-    * 스트림의 모든 요소를 컬렉션에 수집하려면, Collectors클래스의 메서드를 사용하면 된다.
-    * Map은 키와 값의 쌍으로 저장해야 하므로 객체의 어떤 필드를 키로 사용할지와 값으로
-      사용할지를 지정해줘야 한다.
-* 문자열 결합 - joining()
-    * 문자열 스트림의 모든 요소를 하나의 문자열로 연결해서 반환한다.
-    * 스트림의 요소가 CharSequence의 자손인 경우에만 결합이 가능하다.
-    * 문자열이 아닌경우 map()을 먼저 해줘야 하고 바로 joining을 하면
-      toString()을 호출한 결과를 반환한다.
-* 그룹화와 분할 - groupingBy(), partitioningBy()
-    * 그룹화는 스트림의 요소를 특정 기준으로 그훕화 하는 것이다.
-    * 분할은 스트림의 요소를 두 가지, 지정된 조건에 일치하는 그룹과 일치하지 않는
-      그룹으로 분할을 의미한다.
-
-## Collector 구현하기
-
-* Collector인터페이스를 구현하려면 4개의 람다식을 구현해야한다.
-  * supplier() 작업 결과를 저장할 공간을 제공
-  * accumulator() 스트림의 요소를 수집할 방법을 제공
-  * combiner() 두 저장공간을 병합할 방법을 제공(병렬 스트림)
-  * finisher() 결과를 최종적으로 변환할 방법을 제공
-
-
+  * 스트림의 요소가 배열이거나 map()의 연산 결과가 배열인 경우
+  Stream<T>로 다루고 싶을 때 map() 대신 flatMap()을 사용하면 된다.
+  * 
