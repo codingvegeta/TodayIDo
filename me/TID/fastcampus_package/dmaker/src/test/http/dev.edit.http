@@ -1,0 +1,9 @@
+### Send PUT request with json body
+PUT http://localhost:8080/developer/Mini
+Content-Type: application/json
+
+{
+  "developerLevel": "SENIOR",
+  "developerSkillTYpe": "FULL_STACK",
+  "experienceYears": 5
+}
