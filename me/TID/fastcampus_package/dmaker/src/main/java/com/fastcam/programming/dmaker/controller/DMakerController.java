@@ -44,6 +44,7 @@ public class DMakerController {
         log.info("request: {}", request);
 
 
+
         return dMarkerService.createDeveloper(request);
     }
 
@@ -66,4 +67,5 @@ public class DMakerController {
         return dMarkerService.deleteDeveloper(memberId);
 
     }
+
 }
