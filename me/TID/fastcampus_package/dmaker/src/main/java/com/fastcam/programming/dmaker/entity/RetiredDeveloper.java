@@ -1,7 +1,5 @@
 package com.fastcam.programming.dmaker.entity;
 
-import com.fastcam.programming.dmaker.type.DeveloperLevel;
-import com.fastcam.programming.dmaker.type.DeveloperSkillTYpe;
 import lombok.*;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;

@@ -3,9 +3,8 @@ package com.fastcam.programming.dmaker.dto;
 import com.fastcam.programming.dmaker.code.StatusCode;
 import com.fastcam.programming.dmaker.entity.Developer;
 import com.fastcam.programming.dmaker.type.DeveloperLevel;
-import com.fastcam.programming.dmaker.type.DeveloperSkillTYpe;
+import com.fastcam.programming.dmaker.type.DeveloperSkillType;
 import lombok.*;
-import org.springframework.data.annotation.CreatedDate;
 
 @Getter
 @Setter
@@ -14,7 +13,7 @@ import org.springframework.data.annotation.CreatedDate;
 @Builder
 public class DeveloperDetailDto {
     private DeveloperLevel developerLevel;
-    private DeveloperSkillTYpe developerSkillTYpe;
+    private DeveloperSkillType developerSkillTYpe;
     private Integer experienceYears;
     private String memberId;
     private StatusCode statusCode;

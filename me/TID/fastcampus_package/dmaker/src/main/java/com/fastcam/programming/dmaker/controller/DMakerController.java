@@ -4,7 +4,7 @@ import com.fastcam.programming.dmaker.dto.CreateDeveloper;
 import com.fastcam.programming.dmaker.dto.DeveloperDetailDto;
 import com.fastcam.programming.dmaker.dto.DeveloperDto;
 import com.fastcam.programming.dmaker.dto.EditDeveloper;
-import com.fastcam.programming.dmaker.service.DMarkerService;
+import com.fastcam.programming.dmaker.service.DMakerService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
@@ -17,14 +17,14 @@ import java.util.List;
 @RequiredArgsConstructor
 public class DMakerController {
 
-    private final DMarkerService dMarkerService;
+    private final DMakerService dMakerService;
 
 
     @GetMapping("developers")
     public List<DeveloperDto> getAllDevelopers() {
         log.info("GET /developers HTTP/1.1");
 
-        return dMarkerService.getAllEmployedDevelopers();
+        return dMakerService.getAllEmployedDevelopers();
     }
 
     @GetMapping("developer/{memberId}")
@@ -33,7 +33,7 @@ public class DMakerController {
     ) {
         log.info("GET /developer/{} HTTP/1.1", memberId);
 
-        return dMarkerService.getAllDeveloperDetail(memberId);
+        return dMakerService.getDeveloperDetail(memberId);
     }
 
     @PostMapping("/create-developer")
@@ -45,7 +45,7 @@ public class DMakerController {
 
 
 
-        return dMarkerService.createDeveloper(request);
+        return dMakerService.createDeveloper(request);
     }
 
     @PutMapping("developer/{memberId}")
@@ -55,7 +55,7 @@ public class DMakerController {
     ) {
         log.info("PUT /developer/{} HTTP/1.1", memberId);
 
-        return dMarkerService.editDeveloper(memberId, request);
+        return dMakerService.editDeveloper(memberId, request);
     }
 
     @DeleteMapping("/developer/{memberId}")
@@ -64,7 +64,7 @@ public class DMakerController {
     ) {
 
         log.info("DELETE /developer/{} HTTP/1.1", memberId);
-        return dMarkerService.deleteDeveloper(memberId);
+        return dMakerService.deleteDeveloper(memberId);
 
     }
 

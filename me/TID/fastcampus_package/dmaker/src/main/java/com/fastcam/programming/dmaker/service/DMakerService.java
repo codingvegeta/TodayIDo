@@ -16,13 +16,14 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 import static com.fastcam.programming.dmaker.exception.DMakerErrorCode.*;
 
 @Service
 @RequiredArgsConstructor
-public class DMarkerService {
+public class DMakerService {
     private final DeveloperRepository developerRepository;
     private final RetiredDeveloperRepository retiredDeveloperRepository;
     @Transactional
@@ -54,13 +55,23 @@ public class DMarkerService {
 
     }
 
+
+    @Transactional
+    public DeveloperDetailDto getDeveloper(String memberId) {
+        return developerRepository.findByMemberId(memberId)
+                .map(DeveloperDetailDto::fromEntity)
+                .orElseThrow(
+                        () -> new DMakerException(NO_DEVELOPER)
+                );
+    }
+
     public List<DeveloperDto> getAllEmployedDevelopers() {
     return developerRepository.findDevelopersByStatusCodeEquals(StatusCode.EMPLOYED)
             .stream().map(DeveloperDto::fromEntity)
             .collect(Collectors.toList());
     }
 
-    public DeveloperDetailDto getAllDeveloperDetail(String memberId) {
+    public DeveloperDetailDto getDeveloperDetail(String memberId) {
         return developerRepository.findByMemberId(memberId)
                 .map(DeveloperDetailDto::fromEntity)
                 .orElseThrow(() -> new DMakerException(NO_DEVELOPER));
@@ -116,4 +127,6 @@ public class DMarkerService {
         retiredDeveloperRepository.save(retiredDeveloper);
         return DeveloperDetailDto.fromEntity(developer);
     }
+
+
 }

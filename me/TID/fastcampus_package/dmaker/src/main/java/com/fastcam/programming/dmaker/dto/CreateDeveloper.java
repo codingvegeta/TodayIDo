@@ -2,9 +2,8 @@ package com.fastcam.programming.dmaker.dto;
 
 import com.fastcam.programming.dmaker.entity.Developer;
 import com.fastcam.programming.dmaker.type.DeveloperLevel;
-import com.fastcam.programming.dmaker.type.DeveloperSkillTYpe;
+import com.fastcam.programming.dmaker.type.DeveloperSkillType;
 import lombok.*;
-import org.springframework.web.bind.annotation.GetMapping;
 
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
@@ -23,7 +22,7 @@ public class CreateDeveloper {
         @NotNull
         private DeveloperLevel developerLevel;
         @NotNull
-        private DeveloperSkillTYpe developerSkillTYpe;
+        private DeveloperSkillType developerSkillTYpe;
         @NotNull
         @Min(0)
         @Max(20)
@@ -47,7 +46,7 @@ public class CreateDeveloper {
     @Builder
     public static class Response {
         private DeveloperLevel developerLevel;
-        private DeveloperSkillTYpe developerSkillTYpe;
+        private DeveloperSkillType developerSkillTYpe;
         private Integer experienceYears;
         private String memberId;
 
