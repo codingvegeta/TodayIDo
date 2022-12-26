@@ -16,6 +16,6 @@ public interface DeveloperRepository
 
     List<Developer> findDevelopersByStatusCodeEquals(StatusCode statusCode);
 
-    Arrays findDevelopersByStatusEquals(StatusCode employed);
+//    Arrays findDevelopersByStatusEquals(StatusCode employed);
 }
 
