@@ -55,4 +55,15 @@ public class UserRegisterMockTest {
         String realEmail = captor.getValue();
         assertEquals("email@email.com", realEmail);
     }
+
+    @DisplayName("약한 암호면 가입 실패")
+    @Test
+    void weakPassword2() {
+        BDDMockito.given(mockPasswordChecker.checkPasswordWeak(Mockito.anyString())).willReturn(false);
+
+        assertThrows(WeakPasswordException.class, () -> {
+            userRegister.register("id", "alskdfj!@#WE", "email@email.com");
+        });
+
+    }
 }
