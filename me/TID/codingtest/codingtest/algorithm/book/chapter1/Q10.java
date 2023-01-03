@@ -7,7 +7,8 @@ public class Q10 {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int sum = 0;
-        while (n / 10 == 0) {
+        while (n > 0) {
+            n /= 10;
             sum++;
         }
         System.out.println("그 수는 " + sum + "자리입니다.");

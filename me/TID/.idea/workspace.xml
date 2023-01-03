@@ -32,6 +32,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "/Users/jeonhongseok/IdeaProjects/TodayIDo/me/TID",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -85,6 +86,7 @@
       <workItem from="1669746524979" duration="169000" />
       <workItem from="1670075748882" duration="723000" />
       <workItem from="1672599144382" duration="106000" />
+      <workItem from="1672599260274" duration="58000" />
     </task>
     <task id="LOCAL-00001" summary="Today I DO 2022/11/21 Spring5 공부중">
       <created>1668970733799</created>
