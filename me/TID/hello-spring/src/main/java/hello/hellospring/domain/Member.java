@@ -1,7 +1,14 @@
 package hello.hellospring.domain;
 
+import javax.persistence.*;
+
+@Entity
 public class Member {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+
+    @Column
     private Long id;
     private String name;
 
