@@ -18,7 +18,6 @@ public class Main1929 {
         prime[0] = prime[1] = true;
 
         for (int i = 2; i * i <= k; i++) {
-
             if (!prime[i]) {
                 for (int j = i * i; j <= k; j += i) {
                     prime[j] = true;
@@ -26,7 +25,7 @@ public class Main1929 {
             }
         }
 
-        for (int i = n; i < k; i++) {
+        for (int i = n; i <= k; i++) {
             if (!prime[i]) {
                 System.out.println(i);
             }
