@@ -1,5 +1,8 @@
 package jpabook.jpashop;
 
+import jpabook.jpashop.domain.Order;
+import jpabook.jpashop.domain.OrderItem;
+
 import javax.persistence.*;
 
 public class JpaMain {
@@ -13,7 +16,6 @@ public class JpaMain {
         tx.begin();
 
         try {
-
 
         } catch (Exception e) {
 
