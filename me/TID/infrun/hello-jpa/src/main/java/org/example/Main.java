@@ -15,27 +15,14 @@ public class Main {
         EntityTransaction tx = em.getTransaction();
         tx.begin();
         try {
+            Child child1 = new Child();
+            Child child2 = new Child();
 
-            Team team = new Team();
-            team.setName("TeamA");
-            em.persist(team);
+            Parent parent = new Parent();
+            parent.addChild(child1);
+            parent.addChild(child2);
 
-            Member member = new Member();
-            member.setUsername("member1");
-            member.changeTeam(team);
-            em.persist(member);
-//
-//            em.flush();
-//            em.clear();
-
-            Member findMember = em.find(Member.class, member.getId());
-            List<Member> members = findMember.getTeam().getMembers();
-
-            for (Member m : members) {
-                System.out.println("m.getUsername() = " + m.getUsername());
-
-            }
-
+            em.persist(parent);
 
             tx.commit();
         } catch (Exception e) {

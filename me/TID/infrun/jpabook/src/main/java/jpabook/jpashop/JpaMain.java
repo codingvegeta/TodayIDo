@@ -1,5 +1,7 @@
 package jpabook.jpashop;
 
+import jpabook.jpashop.domain.Book;
+import jpabook.jpashop.domain.Member;
 import jpabook.jpashop.domain.Order;
 import jpabook.jpashop.domain.OrderItem;
 
@@ -16,12 +18,22 @@ public class JpaMain {
         tx.begin();
 
         try {
+            Member member = new Member();
+            member.setName("hihi");
+            em.persist(member);
 
+            em.flush();
+            em.clear();
+
+            Member findMember = em.getReference(Member.class, member.getId());
+            System.out.println("findMember.getClass() = " + findMember.getClass());
+
+            tx.commit();
         } catch (Exception e) {
-
-        }finally {
+            tx.rollback();
+        } finally {
             em.close();
         }
-            emf.close();
+        emf.close();
     }
 }
