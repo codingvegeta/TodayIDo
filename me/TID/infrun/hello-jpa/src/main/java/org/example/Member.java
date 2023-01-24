@@ -1,6 +1,7 @@
 package org.example;
 
 import javax.persistence.*;
+import java.time.LocalDateTime;
 import java.util.Date;
 
 @Entity
@@ -11,36 +12,14 @@ public class Member {
     private Long id;
     @Column(name = "USERNAME")
     private String username;
-    @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "TEAM_ID")
-    private Team team;
 
-    public Long getId() {
-        return id;
-    }
+    private LocalDateTime startDate;
+    private LocalDateTime endDate;
 
-    public void setId(Long id) {
-        this.id = id;
-    }
+    private String city;
+    private String street;
+    private String zipcode;
 
-    public String getUsername() {
-        return username;
-    }
 
-    public void setUsername(String username) {
-        this.username = username;
-    }
 
-    public Team getTeam() {
-        return team;
-    }
-
-    public void setTeam(Team team) {
-        this.team = team;
-    }
-
-    public void changeTeam(Team team) {
-        this.team = team;
-        team.getMembers().add(this);
-    }
 }

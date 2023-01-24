@@ -10,23 +10,23 @@ public class Team {
     @Id @GeneratedValue
     @Column(name = "TEAM_ID")
     private Long id;
-    @OneToMany(mappedBy = "team")
-    private List<Member> members = new ArrayList<>();
-
-    public void addMember(Member member) {
-        member.setTeam(this);
-        members.add(member);
-    }
+//    @OneToMany(mappedBy = "team")
+//    private List<Member> members = new ArrayList<>();
+//
+//    public void addMember(Member member) {
+////        member.setTeam(this);
+//        members.add(member);
+//    }
 
     private String name;
 
-    public List<Member> getMembers() {
-        return members;
-    }
-
-    public void setMembers(List<Member> members) {
-        this.members = members;
-    }
+//    public List<Member> getMembers() {
+//        return members;
+//    }
+//
+//    public void setMembers(List<Member> members) {
+//        this.members = members;
+//    }
 
 
     public Long getId() {
