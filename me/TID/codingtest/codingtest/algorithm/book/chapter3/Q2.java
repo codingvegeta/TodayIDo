@@ -1,5 +1,7 @@
 package algorithm.book.chapter3;
 
+import java.util.ArrayList;
+
 public class Q2 {
     public static int scanning(int[] a, int n, int key) {
         System.out.print("   |");

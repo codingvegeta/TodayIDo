@@ -1,4 +1,4 @@
-package beakjoon.doit;
+package beakjoon.doit.stack;
 
 import java.util.Scanner;
 import java.util.Stack;
