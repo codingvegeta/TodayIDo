@@ -18,15 +18,23 @@ public class Main1654 {
             lan[i] = Integer.parseInt(st.nextToken());
         }
         Arrays.sort(lan);
-        int min = lan[0];
+        int min = 0;
+        int max = lan[0];
+        int pointer = max;
+
         while (true) {
             int count = 0;
             for (int i = 0; i < n; i++) {
-                count += (lan[i] / min);
+                count += (lan[i] / pointer);
             }
-            if (count < k) {
-                min--;
+            if (count > k) {
+                min = pointer;
+                pointer = (min + pointer) /2;
+            } else if (count < k) {
+                min = pointer;
+                pointer = (max + pointer) / 2;
             }
+
             if (count == k) {
                 break;
             }
