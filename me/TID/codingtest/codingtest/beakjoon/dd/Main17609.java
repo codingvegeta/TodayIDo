@@ -12,11 +12,8 @@ public class Main17609 {
             String str = br.readLine();
             int answer = palindrome(str);
 
-            if (answer >= 2) {
-                bw.write(answer - 1 + "\n");
-            } else {
-            bw.write(answer + "\n");
-            }
+                bw.write(answer + "\n");
+
         }
         bw.close();
     }
@@ -25,45 +22,67 @@ public class Main17609 {
         int answer = 0;
         int left = 0;
         int right = word.length() - 1;
+        String a;
+        String b;
 
-        while (left <= right) {
+        while (left < right) {
 
             if (word.charAt(left) == word.charAt(right)) {
                 left++;
                 right--;
             } else {
-                answer = 1;
-
-                int l = left;
-                int r = right;
-
-                l++;
-                while (l <= r) {
-                    if (word.charAt(l) == word.charAt(r)) {
-                        l++;
-                        r--;
-                    } else {
-                        answer++;
-                        break;
+                if (left < right - 1) {
+                    a = new StringBuilder(word).deleteCharAt(right).toString();
+                    b = new StringBuilder(a).reverse().toString();
+                    if (a.equals(b)) {
+                        return 1;
                     }
                 }
-
-                l = left;
-                r = right;
-
-                r--;
-                while (l <= r) {
-                    if (word.charAt(l) == word.charAt(r)) {
-                        l++;
-                        r--;
-                    } else {
-                        answer++;
-                        break;
+                if (left + 1 < right) {
+                    a = new StringBuilder(word).deleteCharAt(left).toString();
+                    b = new StringBuilder(a).reverse().toString();
+                    if (a.equals(b)) {
+                        return 1;
                     }
                 }
-                    return answer;
+                return 2;
             }
+
+//            } else {
+//                answer = 1;
+//
+//                int l = left;
+//                int r = right;
+//
+//                l++;
+//                while (l <= r) {
+//                    if (word.charAt(l) == word.charAt(r)) {
+//                        l++;
+//                        r--;
+//                    } else {
+//                        answer++;
+//                        break;
+//                    }
+//                }
+//
+//                l = left;
+//                r = right;
+//
+//                r--;
+//                while (l <= r) {
+//                    if (word.charAt(l) == word.charAt(r)) {
+//                        l++;
+//                        r--;
+//                    } else {
+//                        answer++;
+//                        break;
+//                    }
+//                }
+//                    return answer;
+//            }
+//        }
+//        return answer;
         }
-        return answer;
+        return 0;
     }
 }
