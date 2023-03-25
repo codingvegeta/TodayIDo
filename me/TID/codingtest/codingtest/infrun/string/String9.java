@@ -10,7 +10,7 @@ public class String9 {
                 sb.append(str.charAt(i));
             }
         }
-        return Integer.valueOf(sb.toString());
+        return Integer.parseInt(sb.toString());
     }
 
     public static void main(String[] args) {
