@@ -20,6 +20,5 @@ public class String3 {
         Scanner in = new Scanner(System.in);
         String input1 = in.nextLine();
         System.out.println(solution(input1));
-        return;
     }
 }
