@@ -11,9 +11,8 @@ public class String8 {
                 sb.append(str.charAt(i));
             }
         }
-        StringBuilder sb2 = new StringBuilder(sb.reverse());
-        sb.reverse();
-        if (sb.toString().equals(sb2.toString())) {
+        String sb2 = new StringBuilder(sb).reverse().toString();
+        if (sb.toString().equals(sb2)) {
             return "YES";
         }
         return "NO";

@@ -5,14 +5,14 @@ import java.util.StringTokenizer;
 
 public class String12 {
     public static String solution(int n , String str) {
-        String replace = str.replace('#', '1');
-        String replace1 = replace.replace('*', '0');
         StringBuilder sb = new StringBuilder();
+        String replace = str.replace('#', '1').replace('*', '0');
+//        String replace1 = replace.replace('*', '0');
         String[] answer = new String[n];
         int start = 0;
         int end = 1;
         for (int i = 0; i < n; i++) {
-            answer[i] = replace1.substring(start, 7 * end);
+            answer[i] = replace.substring(start, 7 * end);
             start = 7 * end;
             end++;
         }
