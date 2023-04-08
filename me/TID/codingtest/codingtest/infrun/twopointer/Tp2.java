@@ -1,20 +1,23 @@
 package infrun.twopointer;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.Scanner;
+import java.util.*;
 
 public class Tp2 {
     static ArrayList<Integer> solution(int[] a, int[] b) {
         ArrayList<Integer> answer = new ArrayList<>();
-        for (int i = 0; i < a.length; i++) {
-            for (int j = 0; j < b.length; j++) {
-                if (a[i] == b[j]) {
-                    answer.add(a[i]);
-                }
+        Arrays.sort(a);
+        Arrays.sort(b);
+        int p1 = 0, p2 = 0;
+        while (p1 < a.length && p2 < b.length) {
+            if (a[p1] == b[p2]) {
+                answer.add(a[p1++]);
+                p2++;
+            } else if (a[p1] < b[p2]) {
+                p1++;
+            } else {
+                p2++;
             }
         }
-        answer.sort(Comparator.naturalOrder());
         return answer;
     }
 
