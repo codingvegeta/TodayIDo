@@ -28,7 +28,8 @@ public class OrderControllerConcreteProxy extends OrderControllerV2 {
         } catch (Exception e) {
             logTrace.exception(status, e);
             throw e;
-        }    }
+        }
+    }
 
     @Override
     public String noLog() {
