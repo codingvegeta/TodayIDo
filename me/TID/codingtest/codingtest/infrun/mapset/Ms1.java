@@ -1,13 +1,12 @@
 package infrun.mapset;
 
 import java.util.HashMap;
-import java.util.Map;
 import java.util.Scanner;
 
 public class Ms1 {
     static String solution(int n, String str) {
         String answer = "";
-        Map<Character, Integer> map = new HashMap();
+        HashMap<Character, Integer> map = new HashMap();
         for (char x : str.toCharArray()) {
             map.put(x, map.getOrDefault(x, 0) + 1);
         }
