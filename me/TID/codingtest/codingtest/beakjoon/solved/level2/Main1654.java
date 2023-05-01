@@ -3,7 +3,6 @@ package beakjoon.solved.level2;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class Main1654 {
@@ -13,32 +12,27 @@ public class Main1654 {
         int n = Integer.parseInt(st.nextToken());
         int k = Integer.parseInt(st.nextToken());
         int[] lan = new int[n];
+        int max = Integer.MIN_VALUE;
         for (int i = 0; i < n; i++) {
-            st = new StringTokenizer(br.readLine());
-            lan[i] = Integer.parseInt(st.nextToken());
+            lan[i] = Integer.parseInt(br.readLine());
+            max = Math.max(max, lan[i]);
         }
-        Arrays.sort(lan);
-        int min = 0;
-        int max = lan[0];
-        int pointer = max;
 
-        while (true) {
-            int count = 0;
+        long lt = 1;
+        long rt = max;
+
+        while (lt <= rt) {
+            long mid = (lt + rt) / 2;
+            long sum = 0;
             for (int i = 0; i < n; i++) {
-                count += (lan[i] / pointer);
+                sum += lan[i] / mid;
             }
-            if (count > k) {
-                min = pointer;
-                pointer = (min + pointer) /2;
-            } else if (count < k) {
-                min = pointer;
-                pointer = (max + pointer) / 2;
-            }
-
-            if (count == k) {
-                break;
+            if (sum < k) {
+                rt = mid -1;
+            } else {
+                lt = mid + 1;
             }
         }
-        System.out.println(min);
+        System.out.println((lt + rt) / 2);
     }
 }
