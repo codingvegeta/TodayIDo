@@ -6,12 +6,14 @@ management:
       enabled: true
     env:
       enabled: true
+  server:
+    port: 8080
   endpoint:
     shutdown:
       enabled: true
     health:
-#      show-details: always
       show-components: always
+      #show-details: always
   endpoints:
     web:
       exposure:
@@ -25,3 +27,8 @@ info:
 logging:
   level:
     hello.controller: debug
+
+server:
+  tomcat:
+    mbeanregistry:
+      enabled: true
