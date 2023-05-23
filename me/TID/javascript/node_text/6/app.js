@@ -7,6 +7,9 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const multer = require('multer');
 const fs = require('fs');
+const indexRouter = require('./routes');
+const userRouter = require('./routes/user');
+const nunjucks = require('nunjucks');
 
 try{
     fs.readdirSync('uploads');
@@ -28,12 +31,19 @@ const upload = multer({
     limits: {fileSize: 5* 1204 * 1204},
 })
 
+const app = express();
+app.set('port', process.env.PORT||3000);
+app.set('view engine', 'html');
+
+nunjucks.configure('views', {
+    express: app,
+    watch: true,
+});
+
 app.use(bodyParser.raw());
 app.use(bodyParser.text());
 
 dotenv.config();
-const app = express();
-app.set('port', process.env.PORT||3000);
 
 app.use(morgan('dev'));
 app.use('/', express.static(path.join(__dirname, 'public')));
@@ -50,7 +60,16 @@ app.use(session({
     },
     name: 'session-cookie',
 }));
-        
+
+app.use('/', indexRouter);
+app.use('/user', userRouter);
+
+app.use((req, res, next) => {
+    const error = new Error(`${req.method} ${req.url} 라우터가 없습니다.`)
+    error.status = 404;
+    next(error);
+});
+
 app.use((req, res, next) => {
     console.log('모든 요청에 다 실행됩니다.');
     next();
@@ -69,8 +88,10 @@ app.post('/upload', upload.array('image'), (req, res) => {
 });
 
 app.use((error, req, res, next) => {
-    console.error(error);
-    res.status(500).send(error.message);
+    res.locals.message = error.message;
+    res.locals.error = process.env.NODE_ENV !== 'production'? error : {};
+    req.status(err.status || 500);
+    res.render('error');
 });
 
 app.get('/', (req, res,) => {
