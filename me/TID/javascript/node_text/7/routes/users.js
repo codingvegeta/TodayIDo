@@ -8,6 +8,7 @@ router.route('/')
     .get(async (req, res, next) => {
         try{
             const users = await User.findAll();
+            console.log('usersTest입니다. : ',users)
             res.json(users);
         }catch(err){
             console.error(err);

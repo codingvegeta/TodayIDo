@@ -1,5 +1,6 @@
 // 사용자 이름 눌렀을 때 댓글 로딩
 document.querySelectorAll('#user-list tr').forEach((el) => {
+  console.log('사용자 이름 눌렀음 ㅋㅋ')
     el.addEventListener('click', function () {
       const id = el.querySelector('td').textContent;
       getComment(id);
