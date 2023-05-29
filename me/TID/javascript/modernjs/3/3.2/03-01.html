@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Counter</title>
+</head>
+<body>
+    <div id="counter">0</div>
+    <button id="increase">+</button>
+    <button id="decrease">-</button>
+    <script>
+        // 에를 발생시키는 코드: 선택잔ㄴ 'counter-x'가 아니라 'counter'를 지정해야 한다.   
+        const $counter = document.getElementById('counter');
+        const $increase = document.getElementById('increase');
+        const $decrease = document.getElementById('decrease');
+
+        let num =0;
+        const render = function() { $counter.innerHTML = num; };
+
+        $increase.onclick = function() {
+            num++;
+            console.log('increase 버튼 클릭', num);
+            render();
+        };
+
+        $decrease.onclick = function() {
+            num--;
+            console.log('decrease 버튼 클릭', num);
+            render();
+        };
+    </script>
+</body>
+</html>
