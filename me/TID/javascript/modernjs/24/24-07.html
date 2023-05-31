@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            function foo() {
+                const x = 1;
+
+                function bar() {
+                    debugger
+                    
+                    console.log(x);
+                }
+                bar();
+            }
+
+            foo();
+        </script>
+    </body>
+</html>
+<!-- 클로저가 아님 -->

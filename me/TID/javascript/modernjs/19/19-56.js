@@ -16,7 +16,13 @@ const me = new Person('Me');
 
 Person.helloMethod();
 console.log(Person.kkProp);
+me.sayName();
 
+me.helloWorld = function(){
+    console.log('hello World');
+};
+
+me.helloWorld();
 // me.helloMethod(); 인스턴스에는 메서드가 존재 하지 않음 클래스 영역에 존재하는 느낌으로 있는거임
 
 
