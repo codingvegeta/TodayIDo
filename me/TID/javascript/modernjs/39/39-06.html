@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <div id="foo"></div>
+    <script>
+        console.log(foo);
+        console.log(foo === document.getElementById('foo'));
+
+        delete foo;
+        console.log(foo)
+    </script>
+</body>
+</html>
+<!-- id값과 동일한 이름의 전역번수가 이미 선언되어 이씅면 노드 객체가 재할당되지 않는다. -->

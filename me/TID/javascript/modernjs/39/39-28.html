@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <ul id="fruits">
+        <li class="apple">Apple</li>
+        <li class="banana">Banana</li>
+        <li class="orange">Orange</li>
+    </ul>
+    </body>
+    <script>
+        // 노드 탐색의 기점이 되는 #fruit 요소 노드를 취득한다.
+        const $fruits = document.getElementById('fruits');
+
+        // #fruits 요소의 모든 자식 노드를 탐색한다.
+        // childNodes 프로퍼티가 반환한 NodeList에는 요소 노드뿐만 아니라 텍스트 노드도 포함되어 있다.
+        console.log($fruits.childNodes);
+
+        // #fruits 요소의 모든 자식 노드를 탐색한다.
+        // children 프로퍼티가 반환한 HTMLCollection에는 요소 노드만 포함되어 있다.
+        console.log($fruits.children);
+
+        // #fruits 요소의 첫 번째 자식 노드를 탐색한다.
+        // firstChild 프로퍼티는 텍스트 노드를 반환할 수도 있다.
+        console.log($fruits.firstChild);
+
+        // #fruits 요소의 마지막 자식 노드를 탐색한다.
+        // lastChild 프로퍼티는 텍스트 노드를 반환할 수도 있다.
+        console.log($fruits.lastChild);
+
+        // #fruits 요소의 첫 번째 자식 노드를 탐색한다.
+        // firstElementChild 프로퍼티는 요소 노드만 반환한다.
+        console.log($fruits.firstElementChild);
+
+        // #fruits 요소의 마지막 자식 노드를 탐색한다.
+        // lastElementChild 프로퍼티는 요소 노드만 반환한다.
+        console.log($fruits.lastElementChild);
+    </script>
+</html>

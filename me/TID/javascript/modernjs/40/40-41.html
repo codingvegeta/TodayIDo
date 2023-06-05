@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <button class="btn">0</button>
+    <script>
+        class App {
+            constructor() {
+                this.$button1 = document.querySelector('.btn');
+                this.$button2 = document.querySelector('btn');
+
+                this.count = 0;
+
+                this.$button1.onclick = this.increase.bind(this);
+            }
+
+            increase() {
+                this.$button1.textContent = ++this.count;
+            }
+        }
+
+        new App();
+    </script>
+</body>
+</html>

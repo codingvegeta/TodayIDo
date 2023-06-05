@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <ul>
+        <li class="apple">Apple</li>
+        <li class="banana">Banana</li>
+        <li class="orange">Orange</li>
+    </ul>
+    <script>
+        // ul 요소의 자식 요소인 li 요소를 모두 탐색하여 반환한다.
+        const $elems = document.querySelectorAll('ul > li');
+        console.log($elems);
+
+        $elems.forEach(elem => {elem.style.color = 'green';});
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <input type="text">
+    <input type="checkbox">
+    <button>Click me!</button>
+    <script>
+        const $input = document.querySelector('input[type=text]');
+        const $checkbox = document.querySelector('input[type=checkbox]');
+        const $button = document.querySelector('button');
+
+        //load 이벤트가 발생하면 Event 타입의 이벤트 객체가 생성된다.
+        window.onload = console.log;
+
+        // change 이벤트가 발생하면 Event 타입의 이벤트 객체가 생성된다.
+        $checkbox.onchange = console.log;
+
+        // focus 이벤트가 발생하면 FocusEvent 타입의 이벤트 객체가 생성된다.
+        $input.onfocus = console.log;
+
+        // input 이벤트가 발생하면 InputEvent 타입의 이벤트 객체가 생성된다.
+        $input.oninput = console.log;
+
+        // keyup 이벤트가 발생하면 KeyBoardEvent 타입의 이벤트 객체가 생성된다.
+        $input.onkyeup = console.log;
+
+        // click 이벤트가 발생하면 MouseEvent 타입의 이벤트 객체가 생성된다.
+        $button.onclick = console.log;
+    </script>
+</body>
+</html>
