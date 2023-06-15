@@ -1,4 +1,4 @@
-package chapter1;
+package chap01;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -32,6 +32,7 @@ public class FilteringApples {
         // []
         List<Apple> weirdApples = filterApples(inventory, (Apple a) -> a.getWeight() < 80 || "brown".equals(a.getColor()));
         System.out.println(weirdApples);
+
     }
 
     public static List<Apple> filterGreenApples(List<Apple> inventory) {
