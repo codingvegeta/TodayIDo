@@ -18,9 +18,9 @@ package chap10.dsl;
 
 import java.util.stream.Stream;
 
-import modernjavainaction.chap10.dsl.model.Order;
-import modernjavainaction.chap10.dsl.model.Stock;
-import modernjavainaction.chap10.dsl.model.Trade;
+import chap10.dsl.model.Order;
+import chap10.dsl.model.Stock;
+import chap10.dsl.model.Trade;
 
 public class NestedFunctionOrderBuilder {
 

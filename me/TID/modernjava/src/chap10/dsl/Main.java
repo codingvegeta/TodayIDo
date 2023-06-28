@@ -16,20 +16,20 @@
 
 package chap10.dsl;
 
-import static modernjavainaction.chap10.dsl.MethodChainingOrderBuilder.forCustomer;
-import static modernjavainaction.chap10.dsl.MixedBuilder.buy;
-import static modernjavainaction.chap10.dsl.MixedBuilder.forCustomer;
-import static modernjavainaction.chap10.dsl.MixedBuilder.sell;
-import static modernjavainaction.chap10.dsl.NestedFunctionOrderBuilder.at;
-import static modernjavainaction.chap10.dsl.NestedFunctionOrderBuilder.buy;
-import static modernjavainaction.chap10.dsl.NestedFunctionOrderBuilder.on;
-import static modernjavainaction.chap10.dsl.NestedFunctionOrderBuilder.order;
-import static modernjavainaction.chap10.dsl.NestedFunctionOrderBuilder.sell;
-import static modernjavainaction.chap10.dsl.NestedFunctionOrderBuilder.stock;
+import static chap10.dsl.MethodChainingOrderBuilder.forCustomer;
+import static chap10.dsl.MixedBuilder.buy;
+import static chap10.dsl.MixedBuilder.forCustomer;
+import static chap10.dsl.MixedBuilder.sell;
+import static chap10.dsl.NestedFunctionOrderBuilder.at;
+import static chap10.dsl.NestedFunctionOrderBuilder.buy;
+import static chap10.dsl.NestedFunctionOrderBuilder.on;
+import static chap10.dsl.NestedFunctionOrderBuilder.order;
+import static chap10.dsl.NestedFunctionOrderBuilder.sell;
+import static chap10.dsl.NestedFunctionOrderBuilder.stock;
 
-import modernjavainaction.chap10.dsl.model.Order;
-import modernjavainaction.chap10.dsl.model.Stock;
-import modernjavainaction.chap10.dsl.model.Trade;
+import chap10.dsl.model.Order;
+import chap10.dsl.model.Stock;
+import chap10.dsl.model.Trade;
 
 public class Main {
 

@@ -16,14 +16,12 @@
 
 package chap10.dsl;
 
-import static modernjavainaction.chap10.dsl.MixedBuilder.buy;
-import static modernjavainaction.chap10.dsl.MixedBuilder.forCustomer;
-import static modernjavainaction.chap10.dsl.MixedBuilder.sell;
+import chap10.dsl.model.Order;
+import chap10.dsl.model.Tax;
 
 import java.util.function.DoubleUnaryOperator;
 
-import modernjavainaction.chap10.dsl.model.Order;
-import modernjavainaction.chap10.dsl.model.Tax;
+import static chap10.dsl.MixedBuilder.*;
 
 public class TaxCalculator {
 

@@ -17,15 +17,15 @@
 package chap10.dsl;
 
 import static java.util.stream.Collectors.groupingBy;
-import static modernjavainaction.chap06.Dish.menu;
-import static modernjavainaction.chap10.dsl.Grouping.GroupingBuilder.groupOn;
+import static chap06.Dish.menu;
+import static chap10.dsl.Grouping.GroupingBuilder.groupOn;
 
 import java.util.List;
 import java.util.Map;
 import java.util.function.Function;
 import java.util.stream.Collector;
 
-import modernjavainaction.chap06.Dish;
+import chap06.Dish;
 
 public class Grouping {
 
