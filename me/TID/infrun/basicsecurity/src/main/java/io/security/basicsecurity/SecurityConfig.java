@@ -8,6 +8,7 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -78,17 +79,17 @@ public class SecurityConfig {
                 .antMatchers("/admin/pay").hasRole("ADMIN")
                 .anyRequest().authenticated();
 
-        http
-                .formLogin()
-                .successHandler(new AuthenticationSuccessHandler() {
-                    @Override
-                    public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response, Authentication authentication) throws IOException, ServletException {
-                        RequestCache requestCache = new HttpSessionRequestCache();
-                        SavedRequest savedRequest = requestCache.getRequest(request, response);
-                        String redirectUrl = savedRequest.getRedirectUrl();
-                        response.sendRedirect(redirectUrl);
-                    }
-                });
+//        http
+//                .formLogin()
+//                .successHandler(new AuthenticationSuccessHandler() {
+//                    @Override
+//                    public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response, Authentication authentication) throws IOException, ServletException {
+//                        RequestCache requestCache = new HttpSessionRequestCache();
+//                        SavedRequest savedRequest = requestCache.getRequest(request, response);
+//                        String redirectUrl = savedRequest.getRedirectUrl();
+//                        response.sendRedirect(redirectUrl);
+//                    }
+//                });
 ////                .loginPage("/loginPage")
 //                .defaultSuccessUrl("/")
 //                .failureUrl("/login")
@@ -149,18 +150,21 @@ public class SecurityConfig {
 
         http
                 .exceptionHandling()
-                .authenticationEntryPoint(new AuthenticationEntryPoint() {
-                    @Override
-                    public void commence(HttpServletRequest request, HttpServletResponse response, AuthenticationException authException) throws IOException, ServletException {
-                        response.sendRedirect("/login");
-                    }
-                })
+//                .authenticationEntryPoint(new AuthenticationEntryPoint() {
+//                    @Override
+//                    public void commence(HttpServletRequest request, HttpServletResponse response, AuthenticationException authException) throws IOException, ServletException {
+//                        response.sendRedirect("/login");
+//                    }
+//                })
                 .accessDeniedHandler(new AccessDeniedHandler() {
                     @Override
                     public void handle(HttpServletRequest request, HttpServletResponse response, AccessDeniedException accessDeniedException) throws IOException, ServletException {
                         response.sendRedirect("/denied");
                     }
                 });
+
+
+        SecurityContextHolder.setStrategyName(SecurityContextHolder.MODE_INHERITABLETHREADLOCAL);
 
         return http.build();
     }
