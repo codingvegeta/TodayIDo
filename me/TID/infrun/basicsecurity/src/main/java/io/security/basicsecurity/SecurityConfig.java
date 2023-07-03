@@ -30,6 +30,8 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 
+///DelegatingFilterProxy 가 필터를 모두 가지고 있음
+// 시큐리티 필터 체인 에게 요청을 보낸다.
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig {
