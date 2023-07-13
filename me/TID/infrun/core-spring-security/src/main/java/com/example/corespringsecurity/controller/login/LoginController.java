@@ -1,6 +1,7 @@
 package com.example.corespringsecurity.controller.login;
 
 import com.example.corespringsecurity.domain.entity.Account;
+import com.example.corespringsecurity.security.service.AccountContext;
 import com.example.corespringsecurity.security.token.AjaxAuthenticationToken;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -49,8 +50,9 @@ public class LoginController {
         Account account = null;
 
         if (principal instanceof UsernamePasswordAuthenticationToken) {
-            account = (Account) ((UsernamePasswordAuthenticationToken) principal).getPrincipal();
-        } else if (principal instanceof AjaxAuthenticationToken) {
+            account = ((AccountContext) ((UsernamePasswordAuthenticationToken) principal).getPrincipal()).getAccount();
+            System.out.println(account);
+        }else if(principal instanceof AjaxAuthenticationToken){
             account = (Account) ((AjaxAuthenticationToken) principal).getPrincipal();
         }
 
