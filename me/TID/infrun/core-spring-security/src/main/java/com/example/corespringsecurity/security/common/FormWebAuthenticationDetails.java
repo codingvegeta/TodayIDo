@@ -14,7 +14,9 @@ public class FormWebAuthenticationDetails extends WebAuthenticationDetails {
         secretkey = request.getParameter("secret_key");
     }
 
-    public String getSecretkey() {
+    public String getSecretKey() {
         return secretkey;
     }
+
+
 }
