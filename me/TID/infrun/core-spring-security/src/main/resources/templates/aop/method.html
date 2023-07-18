@@ -23,13 +23,10 @@
         </nav>
         <div style="padding-top:50px;"  class="col">
             <div class="container text-center">
-                <h1 class="text-primary">DASHBOARD</h1>
-                <div class="security"></div>
-                <h1>Core Spring Security 에 오신 것을 환영합니다.</h1>
+                <h1 class="text-primary" th:text="${method}">Method</h1>
             </div>
         </div>
     </div>
-</div>
-<div th:replace="layout/footer::footer"></div>
+    <div th:replace="layout/footer::footer"></div>
 </body>
 </html>
