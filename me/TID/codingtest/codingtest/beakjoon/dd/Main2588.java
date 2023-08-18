@@ -18,5 +18,6 @@ public class Main2588 {
         System.out.println(asd[1]);
         System.out.println(asd[2]);
         System.out.println(Long.parseLong(strs[0]) * Long.parseLong(strs[1]));
+//        asdfasdf
     }
 }
