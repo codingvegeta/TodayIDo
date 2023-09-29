@@ -1,5 +1,6 @@
 package chapter1;
 
+import chapter4.UserDaoJDBC;
 import com.mysql.cj.jdbc.Driver;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -13,7 +14,7 @@ public class DaoFactory
     @Bean
     public UserDao userDao()
     {
-        UserDao userDao = new UserDao();
+        UserDaoJDBC userDao = new UserDaoJDBC();
         userDao.setDataSource(dataSource());
         return userDao;
     }
