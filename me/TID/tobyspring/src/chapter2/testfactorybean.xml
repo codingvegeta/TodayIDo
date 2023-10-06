@@ -4,75 +4,69 @@
        xmlns:aop="http://www.springframework.org/schema/aop"
        xmlns:context="http://www.springframework.org/schema/context"
        xmlns:tx="http://www.springframework.org/schema/tx"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans
-                           http://www.springframework.org/schema/beans/spring-beans.xsd
-                           http://www.springframework.org/schema/aop
-                           http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
-                           http://www.springframework.org/schema/context
-                           http://www.springframework.org/schema/context/spring-context-3.0.xsd
-                           http://www.springframework.org/schema/tx
-                           http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
-    <tx:annotation-driven/>
+       xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+                           http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+                           http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+                           http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd">
+<!--    <tx:annotation-driven/>-->
 
-    <context:annotation-config/>
+<!--    <context:annotation-config/>-->
 
-    <bean id="userDao" class="chapter7.UserDaoJDBC">
-        <property name="dataSource" ref="dataSource"/>
-        <property name="sqlService" ref="sqlService"/>
-    </bean>
+<!--    <bean id="userDao" class="chapter7.UserDaoJDBC">-->
+<!--        <property name="dataSource" ref="dataSource"/>-->
+<!--        <property name="sqlService" ref="sqlService"/>-->
+<!--    </bean>-->
 
-    <bean id="sqlService" class="chapter7.XmlSqlService">
-        <property name="sqlmapFile" value="/chapter7/jaxb/sqlmap.xml"/>
-    </bean>
+<!--    <bean id="sqlService" class="chapter7.oxm.OxmSqlService">-->
+<!--        <property name="unmarshaller" ref="unmarshaller"/>-->
+<!--        <property name="sqlRegistry" ref="sqlRegistry"/>-->
+<!--    </bean>-->
 
-    <bean id="userService" class="chapter5.UserServiceImpl">
-        <property name="userDao" ref="userDao"/>
-        <property name="mailSender" ref="mailSender"/>
-    </bean>
 
-    <bean id="mailSender" class="chapter5.DummyMailSender"/>
+<!--    <bean id="sqlReader" class="chapter7.JaxbXmlSqlReader">-->
+<!--        <property name="sqlmapFile" value="/chapter7/jaxb/sqlmap.xml"/>-->
+<!--    </bean>-->
 
-    <bean id="transactionManager"
-          class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
-        <property name="dataSource" ref="dataSource"/>
-    </bean>
+<!--    <bean id="sqlRegistry" class="chapter7.embeddeddb.EmbeddedDbSqlRegistry">-->
+<!--        <property name="dataSource" ref="embeddedDatabase"/>-->
+<!--    </bean>-->
 
-    <bean id="testUserService" class="chapter5.UserServiceTest$TestUserService" parent="userService"/>
+<!--    <bean id="userService" class="chapter5.UserServiceImpl">-->
+<!--        <property name="userDao" ref="userDao"/>-->
+<!--        <property name="mailSender" ref="mailSender"/>-->
+<!--    </bean>-->
 
-    <bean id="dataSource"
-          class="org.springframework.jdbc.datasource.SimpleDriverDataSource">
-        <property name="driverClass" value="com.mysql.cj.jdbc.Driver"/>
-        <property name="url" value="jdbc:mysql://localhost/springbook"/>
-        <property name="username" value="spring"/>
-        <property name="password" value="book"/>
-    </bean>
+<!--    <bean id="mailSender" class="chapter5.DummyMailSender"/>-->
 
-    <bean id="message" class="chapter6.factory.MessageFactoryBean">
-        <property name="text" value="Factory Bean"/>
-    </bean>
+<!--    <bean id="transactionManager"-->
+<!--          class="org.springframework.jdbc.datasource.DataSourceTransactionManager">-->
+<!--        <property name="dataSource" ref="dataSource"/>-->
+<!--    </bean>-->
 
-    <bean class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator"/>
+<!--    <bean id="testUserService" class="chapter5.UserServiceTest$TestUserService" parent="userService"/>-->
 
-<!--    <aop:config>-->
-<!--        <aop:advisor advice-ref="transactionAdvice" pointcut="bean(*Service)"/>-->
-<!--    </aop:config>-->
+<!--    <bean id="dataSource"-->
+<!--          class="org.springframework.jdbc.datasource.SimpleDriverDataSource">-->
+<!--        <property name="driverClass" value="com.mysql.cj.jdbc.Driver"/>-->
+<!--        <property name="url" value="jdbc:mysql://localhost/springbook"/>-->
+<!--        <property name="username" value="spring"/>-->
+<!--        <property name="password" value="book"/>-->
+<!--    </bean>-->
 
-<!--&lt;!&ndash;    <bean id="transactionAdvice" class="org.springframework.transaction.interceptor.TransactionInterceptor">&ndash;&gt;-->
-<!--&lt;!&ndash;        <property name="transactionManager" ref="transactionManager" />&ndash;&gt;-->
-<!--&lt;!&ndash;        <property name="transactionAttributes">&ndash;&gt;-->
-<!--&lt;!&ndash;            <props>&ndash;&gt;-->
-<!--&lt;!&ndash;                <prop key="get*">PROPAGATION_REQUIRED, readOnly</prop>&ndash;&gt;-->
-<!--&lt;!&ndash;                <prop key="*">PROPAGATION_REQUIRED</prop>&ndash;&gt;-->
-<!--&lt;!&ndash;            </props>&ndash;&gt;-->
-<!--&lt;!&ndash;        </property>&ndash;&gt;-->
-<!--&lt;!&ndash;    </bean>&ndash;&gt;-->
+<!--    <bean id="message" class="chapter6.factory.MessageFactoryBean">-->
+<!--        <property name="text" value="Factory Bean"/>-->
+<!--    </bean>-->
 
-<!--    <tx:advice id="transactionAdvice" transaction-manager="transactionManager">-->
-<!--        <tx:attributes>-->
-<!--            <tx:method name="get*" propagation="REQUIRED" read-only="true" timeout="30"/>-->
-<!--            <tx:method name="upgrade*" propagation="REQUIRES_NEW" isolation="SERIALIZABLE"/>-->
-<!--            <tx:method name="*" propagation="REQUIRED"/>-->
-<!--        </tx:attributes>-->
-<!--    </tx:advice>-->
+<!--    <bean class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator"/>-->
+
+<!--    <bean id="unmarshaller" class="org.springframework.oxm.jaxb.Jaxb2Marshaller">-->
+<!--        <property name="contextPath" value="chapter7.jaxb"/>-->
+<!--    </bean>-->
+
+<!--    <jdbc:embedded-database id="embeddedDatabase" type="HSQL">-->
+<!--        <jdbc:script location="classpath:chapter7/embeddeddb/schema.sql"/>-->
+<!--    </jdbc:embedded-database>-->
 
 </beans>
