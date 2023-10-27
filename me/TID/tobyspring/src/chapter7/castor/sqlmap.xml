@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqlmap xmlns="http://www.epril.com/sqlmap"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.epril.com/sqlmap
+                            http:/www.epril.com/sqlmap/sqlmap.xsd">
+    <sql key="userAdd">INSERT INTO users(id, name, password, level, login, recommend, email) VALUES (?,?,?,?,?,?,?)</sql>
+    <sql key="userGet" >SELECT * FROM users WHERE id = ?</sql>
+    <sql key="userGetAll">SELECT * FROM users</sql>
+    <sql key="userDeleteAll">DELETE FROM users</sql>
+    <sql key="userGetCount">SELECT COUNT(*) FROM users</sql>
+    <sql key="userUpdate">
+        UPDATE users SET name = ?, password = ?, level = ?, login = ? ,recommend = ?, email = ? WHERE id = ?</sql>
+</sqlmap>
